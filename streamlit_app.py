@@ -293,8 +293,8 @@ def build_results(standard):
         row = {
             "Image": clean_text(item.get("image")),
             "Manufacturer": "CYCLON",
-            "Product": clean_text(item.get("name")),
-            "SKU / Size": clean_text(item.get("sku_size")),
+            "Product": clean_text(item.get("product")),
+            "SKU / Size": clean_text(item.get("code")),
             "Viscosity": clean_text(item.get("viscosity")),
             "Standards": clean_text(item.get("standards")),
             "TDS": clean_text(item.get("tds")),
@@ -385,10 +385,9 @@ def render_results_table(df):
 
         image_url = clean_text(row.get("Image"))
         if image_url:
-            image_src = cyclon_asset(image_url) or image_url
             parts.append(
                 '<td><img src="'
-                + html.escape(image_src, quote=True)
+                + html.escape(image_url, quote=True)
                 + '" loading="lazy"></td>'
             )
         else:

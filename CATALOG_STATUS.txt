@@ -1,14 +1,7 @@
-CYCLON COMPLETE PASSENGER / LIGHT-DUTY ENGINE-OIL SEARCH
-========================================================
-INCLUDED TOGETHER:
-1. COMPLETE bundled legacy MAGMA passenger-car catalogue.
-2. COMPLETE current 47-product Passenger Cars & Light Duty catalogue:
-   EVO + PRO + ECO + MAX.
-
-IMPORTANT:
-- MAGMA is intentionally NOT replaced by the new series.
-- Both legacy MAGMA and current series participate in the same standard search.
-- Current product-page index contains exactly 47 unique official CYCLON pages.
-- Product-image logic rejects cars, banners, hero graphics, logos and generic site artwork.
-- If a current product packshot cannot be identified confidently, no image is shown rather than a wrong image.
-- Existing FERROMAT filtering and UI are retained.
+FINAL CYCLON DATASET
+All-brands CYCLON records: 283
+Legacy MAGMA records added: 40
+Total records: 323
+Records with image URL: 323/323
+MAGMA records in final catalogue: 40
+Search logic: same as all-brands app.
