@@ -277,8 +277,13 @@ def ferromat_links_for_product(sku_size):
     return found
 
 
+@st.cache_data(ttl=86400, show_spinner=False)
+def get_cyclon_products():
+    return load_cyclon_products()
+
+
 def build_results(standard):
-    products = load_cyclon_products()
+    products = get_cyclon_products()
     matches = search_cyclon(products, standard)
 
     rows = []
