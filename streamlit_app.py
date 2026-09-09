@@ -2,6 +2,8 @@ import streamlit as st
 import pandas as pd
 import re
 import html
+import base64
+import requests
 from pathlib import Path
 from urllib.parse import quote_plus
 
@@ -97,11 +99,43 @@ if "ferromat_display_filter" not in st.session_state:
 
 
 # ============================================================
+# OFFICIAL CYCLON IMAGE LOADER
+# ============================================================
+
+@st.cache_data(ttl=86400, show_spinner=False)
+def cyclon_asset(url):
+    """Fetch an official CYCLON image on the Streamlit server and embed it."""
+    if not url:
+        return ""
+    try:
+        response = requests.get(
+            url,
+            headers={
+                "User-Agent": "Mozilla/5.0",
+                "Referer": "https://www.cyclon-lpc.com/",
+                "Accept": "image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8",
+            },
+            timeout=20,
+        )
+        response.raise_for_status()
+        content_type = response.headers.get("Content-Type", "").split(";")[0].strip()
+        if not content_type.startswith("image/"):
+            return ""
+        encoded = base64.b64encode(response.content).decode("ascii")
+        return f"data:{content_type};base64,{encoded}"
+    except Exception:
+        return ""
+
+
+# ============================================================
 # HEADER
 # ============================================================
 
+CYCLON_LOGO_URL = "https://www.cyclon-lpc.com/wp-content/uploads/2022/04/Group-16404.svg"
+_logo_src = cyclon_asset(CYCLON_LOGO_URL) or CYCLON_LOGO_URL
 st.markdown(
-    '<img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Cyclon.svg" alt="CYCLON" style="width:150px; height:auto; margin-bottom:14px;">',
+    '<img src="' + html.escape(_logo_src, quote=True) + '" alt="CYCLON" '
+    'style="width:150px; height:auto; margin-bottom:14px;">',
     unsafe_allow_html=True,
 )
 
@@ -346,9 +380,10 @@ def render_results_table(df):
 
         image_url = clean_text(row.get("Image"))
         if image_url:
+            image_src = cyclon_asset(image_url) or image_url
             parts.append(
                 '<td><img src="'
-                + html.escape(image_url, quote=True)
+                + html.escape(image_src, quote=True)
                 + '" loading="lazy"></td>'
             )
         else:
