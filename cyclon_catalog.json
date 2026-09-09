@@ -1,0 +1,4580 @@
+[
+  {
+    "brand": "CYCLON",
+    "name": "CYCLON MAGMA T-FE",
+    "viscosity": "0W-16",
+    "standards": [
+      "API SN"
+    ],
+    "search_keys": [
+      "APISN"
+    ],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [
+      "4 x 4L",
+      "12 x 1L"
+    ],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2024/11/MAGMA-SYN-T-FE-0W-16-1lt.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2024/11/MAGMA_SYN_T-FE-0W-16_EN_vJI24.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/cyclon-magma-t-fe/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "CYCLON MAGMA J-FE",
+    "viscosity": "0W-8",
+    "standards": [
+      "JASO GLV-1"
+    ],
+    "search_keys": [
+      "JASOGLV1"
+    ],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [
+      "4 x 4L",
+      "12 x 1L"
+    ],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2024/11/MAGMA-SYN-J-FE-0W-8-1lt.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2024/11/MAGMA_SYN_J-FE_-0W-8_EN_vJl24.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/cyclon-magma-j-fe/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "MAGMA PRO V1",
+    "viscosity": "5W-30",
+    "standards": [
+      "VW 504.00",
+      "VW 507.00",
+      "VW 502.00",
+      "VW 505.00",
+      "VW 505.01",
+      "VW 503.00",
+      "VW 503.01",
+      "VW 506.00",
+      "VW 506.01",
+      "MB 229.51",
+      "BMW LongLife-04",
+      "ACEA C3",
+      "ACEA C2",
+      "API SN"
+    ],
+    "search_keys": [
+      "VW50400",
+      "VW504",
+      "VW50700",
+      "VW507",
+      "VW50200",
+      "VW502",
+      "VW50500",
+      "VW505",
+      "VW50501",
+      "VW50300",
+      "VW503",
+      "VW50301",
+      "VW50600",
+      "VW506",
+      "VW50601",
+      "MB22951",
+      "BMWLL04",
+      "ACEAC3",
+      "ACEAC2",
+      "APISN"
+    ],
+    "legacy_code": "JM265",
+    "parent_code": "JM265",
+    "packaging": [
+      "208L",
+      "20L",
+      "4 x 5L",
+      "4 x 4L"
+    ],
+    "sku_rows": [
+      {
+        "sku": "JM26501",
+        "size": "208L"
+      },
+      {
+        "sku": "JM26504",
+        "size": "20L"
+      },
+      {
+        "sku": "JM26507",
+        "size": "4 x 5L"
+      },
+      {
+        "sku": "JM26508",
+        "size": "4 x 4L"
+      }
+    ],
+    "sku_size": "JM26501 — 208L | JM26504 — 20L | JM26507 — 4 x 5L | JM26508 — 4 x 4L",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/MAGMA-PRO-V1-5W-30-1lt.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/MAGMA-PRO-V1-_EN_vMay24-.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/magma-pro-v1/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "MAGMA SYN V-FE",
+    "viscosity": "0W-20",
+    "standards": [
+      "VW 508.00",
+      "VW 509.00",
+      "Porsche C20",
+      "ACEA C5",
+      "ACEA A1/B1",
+      "API SN"
+    ],
+    "search_keys": [
+      "VW50800",
+      "VW508",
+      "VW50900",
+      "VW509",
+      "PORSCHEC20",
+      "ACEAC5",
+      "ACEAA1B1",
+      "APISN"
+    ],
+    "legacy_code": "JM001",
+    "parent_code": "JM001",
+    "packaging": [
+      "4 x 4L",
+      "12 x 1L"
+    ],
+    "sku_rows": [
+      {
+        "sku": "JM00108",
+        "size": "4 x 4L"
+      },
+      {
+        "sku": "JM00109",
+        "size": "12 x 1L"
+      }
+    ],
+    "sku_size": "JM00108 — 4 x 4L | JM00109 — 12 x 1L",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/MAGMA-SYN-V-FE-1LT.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/MAGMA-SYN-V-FE_EN_vMay24.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/magma-syn-v-fe/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "MAGMA SYN M-FE",
+    "viscosity": "0W-20",
+    "standards": [
+      "MB-Approval 229.71",
+      "ACEA C5",
+      "Ford WSS-M12R536-A",
+      "WSS-M12R536-A",
+      "Jaguar-Land Rover STJLR 51.5122",
+      "STJLR 03.5006"
+    ],
+    "search_keys": [
+      "MB22971",
+      "ACEAC5",
+      "FORDWSSM12R536A",
+      "WSSM12R536A",
+      "JAGUARLANDROVERSTJLR515122",
+      "STJLR035006"
+    ],
+    "legacy_code": "JM002",
+    "parent_code": "JM002",
+    "packaging": [
+      "4 x 4L",
+      "12 x 1L"
+    ],
+    "sku_rows": [
+      {
+        "sku": "JM00208",
+        "size": "4 x 4L"
+      },
+      {
+        "sku": "JM00209",
+        "size": "12 x 1L"
+      }
+    ],
+    "sku_size": "JM00208 — 4 x 4L | JM00209 — 12 x 1L",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/MAGMA-SYN-M-FE-1LT.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/MAGMA-SYN-M-FE_EN_vMay24.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/magma-syn-m-fe/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "MAGMA PRO PSA",
+    "viscosity": "5W-30",
+    "standards": [
+      "ACEA C2",
+      "API SN",
+      "PSA B71 2290"
+    ],
+    "search_keys": [
+      "ACEAC2",
+      "APISN",
+      "PSAB712290"
+    ],
+    "legacy_code": "JM255",
+    "parent_code": "JM255",
+    "packaging": [
+      "208L",
+      "4 x 5L",
+      "4 x 4L"
+    ],
+    "sku_rows": [
+      {
+        "sku": "JM25501",
+        "size": "208L"
+      },
+      {
+        "sku": "JM25507",
+        "size": "4 x 5L"
+      },
+      {
+        "sku": "JM25508",
+        "size": "4 x 4L"
+      }
+    ],
+    "sku_size": "JM25501 — 208L | JM25507 — 4 x 5L | JM25508 — 4 x 4L",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/MAGMA-PRO-PSA-5W-30-1lt.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/MAGMA-PRO-PSA-5W30_EN_vMay24.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/magma-pro-psa/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "MAGMA PRO FD5",
+    "viscosity": "5W-30",
+    "standards": [
+      "ACEA A5/B5",
+      "API SL",
+      "Renault RN 0700",
+      "RN 0700",
+      "Ford WSS M2C-913D",
+      "Ford WSS M2C-913C",
+      "WSS M2C-913D",
+      "WSS M2C-913C",
+      "WSS M2C-913B",
+      "WSS M2C-913A",
+      "Jaguar-Land Rover STJLR.03.5003"
+    ],
+    "search_keys": [
+      "ACEAA5B5",
+      "APISL",
+      "RENAULTRN0700",
+      "RN0700",
+      "FORDWSSM2C913D",
+      "FORDWSSM2C913C",
+      "WSSM2C913D",
+      "WSSM2C913C",
+      "WSSM2C913B",
+      "WSSM2C913A",
+      "JAGUARLANDROVERSTJLR035003"
+    ],
+    "legacy_code": "JM260",
+    "parent_code": "JM260",
+    "packaging": [
+      "208L",
+      "20L",
+      "4 x 5L",
+      "4 x 4L"
+    ],
+    "sku_rows": [
+      {
+        "sku": "JM26001",
+        "size": "208L"
+      },
+      {
+        "sku": "JM26004",
+        "size": "20L"
+      },
+      {
+        "sku": "JM26007",
+        "size": "4 x 5L"
+      },
+      {
+        "sku": "JM26008",
+        "size": "4 x 4L"
+      }
+    ],
+    "sku_size": "JM26001 — 208L | JM26004 — 20L | JM26007 — 4 x 5L | JM26008 — 4 x 4L",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/MAGMA-PRO-FD5-5W-30-1lt.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/MAGMA-PRO-FD5-5W30_EN_vMay24-.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/magma-pro-fd5/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "MAGMA PRO DXS",
+    "viscosity": "5W-30",
+    "standards": [
+      "VW 505.01",
+      "VW 505.00",
+      "MB 229.52",
+      "MB 229.51",
+      "BMW LongLife-04",
+      "ACEA C3",
+      "API SN",
+      "dexos2"
+    ],
+    "search_keys": [
+      "VW50501",
+      "VW50500",
+      "VW505",
+      "MB22952",
+      "MB22951",
+      "BMWLL04",
+      "ACEAC3",
+      "APISN",
+      "DEXOS2"
+    ],
+    "legacy_code": "JM250",
+    "parent_code": "JM250",
+    "packaging": [
+      "208L",
+      "20L",
+      "4 x 5L",
+      "4 x 4L",
+      "12 x 1L"
+    ],
+    "sku_rows": [
+      {
+        "sku": "JM25001",
+        "size": "208L"
+      },
+      {
+        "sku": "JM25004",
+        "size": "20L"
+      },
+      {
+        "sku": "JM25007",
+        "size": "4 x 5L"
+      },
+      {
+        "sku": "JM25008",
+        "size": "4 x 4L"
+      },
+      {
+        "sku": "JM25009",
+        "size": "12 x 1L"
+      }
+    ],
+    "sku_size": "JM25001 — 208L | JM25004 — 20L | JM25007 — 4 x 5L | JM25008 — 4 x 4L | JM25009 — 12 x 1L",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/MAGMA-PRO-DXS-5W-30-1lt.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/MAGMA-PRO-DXS-5W30_EN_vMay24-.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/magma-pro-dxs/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "MAGMA SYN ULTRA-S",
+    "viscosity": "0W-20",
+    "standards": [
+      "API SP",
+      "API SN",
+      "Ford WSS M2C-947A",
+      "WSS M2C-947A",
+      "dexos1"
+    ],
+    "search_keys": [
+      "APISP",
+      "APISN",
+      "FORDWSSM2C947A",
+      "WSSM2C947A",
+      "DEXOS1"
+    ],
+    "legacy_code": "JM047",
+    "parent_code": "JM047",
+    "packaging": [
+      "208L",
+      "60L",
+      "4 x 4L",
+      "12 x 1L"
+    ],
+    "sku_rows": [
+      {
+        "sku": "JM04701",
+        "size": "208L"
+      },
+      {
+        "sku": "JM04702",
+        "size": "60L"
+      },
+      {
+        "sku": "JM04708",
+        "size": "4 x 4L"
+      },
+      {
+        "sku": "JM04709",
+        "size": "12 x 1L"
+      }
+    ],
+    "sku_size": "JM04701 — 208L | JM04702 — 60L | JM04708 — 4 x 4L | JM04709 — 12 x 1L",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/1LT_MAGMA-SYN-ULTRA-S-0W-20.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/MAGMA-SYN-ULTRA-S_EN_vJl24.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/magma-syn-ultra-s-2/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "MAGMA SYN ULTRA-S",
+    "viscosity": "5W-20",
+    "standards": [
+      "API SP",
+      "API SN",
+      "Ford WSS M2C-945A",
+      "WSS M2C-945A",
+      "dexos1"
+    ],
+    "search_keys": [
+      "APISP",
+      "APISN",
+      "FORDWSSM2C945A",
+      "WSSM2C945A",
+      "DEXOS1"
+    ],
+    "legacy_code": "JM048",
+    "parent_code": "JM048",
+    "packaging": [
+      "208L",
+      "4 x 4L",
+      "12 x 1L"
+    ],
+    "sku_rows": [
+      {
+        "sku": "JM04801",
+        "size": "208L"
+      },
+      {
+        "sku": "JM04808",
+        "size": "4 x 4L"
+      },
+      {
+        "sku": "JM04809",
+        "size": "12 x 1L"
+      }
+    ],
+    "sku_size": "JM04801 — 208L | JM04808 — 4 x 4L | JM04809 — 12 x 1L",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/1LT_MAGMA-SYN-ULTRA-S-0W-20.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/MAGMA-SYN-ULTRA-S_EN_vJl24.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/magma-syn-ultra-s-2/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "MAGMA SYN ULTRA-S",
+    "viscosity": "5W-30",
+    "standards": [
+      "API SP",
+      "API SN",
+      "Ford WSS M2C-946A",
+      "WSS M2C-946A",
+      "WSS M2C-946B1",
+      "dexos1"
+    ],
+    "search_keys": [
+      "APISP",
+      "APISN",
+      "FORDWSSM2C946A",
+      "WSSM2C946A",
+      "WSSM2C946B1",
+      "DEXOS1"
+    ],
+    "legacy_code": "JM049",
+    "parent_code": "JM049",
+    "packaging": [
+      "208L",
+      "60L",
+      "4 x 4L",
+      "12 x 1L"
+    ],
+    "sku_rows": [
+      {
+        "sku": "JM04901",
+        "size": "208L"
+      },
+      {
+        "sku": "JM04902",
+        "size": "60L"
+      },
+      {
+        "sku": "JM04908",
+        "size": "4 x 4L"
+      },
+      {
+        "sku": "JM04909",
+        "size": "12 x 1L"
+      }
+    ],
+    "sku_size": "JM04901 — 208L | JM04902 — 60L | JM04908 — 4 x 4L | JM04909 — 12 x 1L",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/1LT_MAGMA-SYN-ULTRA-S-0W-20.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/MAGMA-SYN-ULTRA-S_EN_vJl24.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/magma-syn-ultra-s-2/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "MAGMA PRIME",
+    "viscosity": "",
+    "standards": [
+      "API SC",
+      "API CC",
+      "MIL-L-2104B"
+    ],
+    "search_keys": [
+      "APISC",
+      "APICC",
+      "MILL2104B"
+    ],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/1LT_MAGMA-PRIME-30.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/MAGMA-PRIME_EN_vAl23.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/magma-prime/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "MAGMA MULTI",
+    "viscosity": "15W-40",
+    "standards": [
+      "API SF",
+      "API CC"
+    ],
+    "search_keys": [
+      "APISF",
+      "APICC"
+    ],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [
+      "208L",
+      "25L",
+      "20L",
+      "4 x 5L",
+      "4 x 4L",
+      "12 x 1L"
+    ],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/1LT_MAGMA-MULTI-15W-40.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/MAGMA-MULTI_EN_vAl23.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/magma-multi/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "MAGMA MULTI",
+    "viscosity": "20W-50",
+    "standards": [
+      "API SF",
+      "API CC"
+    ],
+    "search_keys": [
+      "APISF",
+      "APICC"
+    ],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [
+      "208L",
+      "25L",
+      "20L",
+      "4 x 5L",
+      "4 x 4L",
+      "12 x 1L"
+    ],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/1LT_MAGMA-MULTI-15W-40.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/MAGMA-MULTI_EN_vAl23.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/magma-multi/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "MAGMA EXTRA",
+    "viscosity": "15W-40",
+    "standards": [
+      "ACEA A2/B2",
+      "API SJ"
+    ],
+    "search_keys": [
+      "ACEAA2B2",
+      "APISJ"
+    ],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [
+      "208L",
+      "60L",
+      "20L",
+      "4 x 5L",
+      "4 x 4L",
+      "12 x 1L"
+    ],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/1LT_MAGMA-EXTRA-15W-40.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/MAGMA-EXTRA_EN_vAl23-.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/magma-extra/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "MAGMA EXTRA",
+    "viscosity": "20W-50",
+    "standards": [
+      "ACEA A2/B2",
+      "API SJ"
+    ],
+    "search_keys": [
+      "ACEAA2B2",
+      "APISJ"
+    ],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [
+      "208L",
+      "20L",
+      "4 x 5L",
+      "4 x 4L",
+      "12 x 1L"
+    ],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/1LT_MAGMA-EXTRA-15W-40.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/MAGMA-EXTRA_EN_vAl23-.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/magma-extra/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "MAGMA X-100",
+    "viscosity": "5W-30",
+    "standards": [
+      "VW 501.01",
+      "VW 505.00",
+      "MB 229.1",
+      "ACEA A3/B3",
+      "API SL"
+    ],
+    "search_keys": [
+      "VW50101",
+      "VW50500",
+      "VW505",
+      "MB2291",
+      "ACEAA3B3",
+      "APISL"
+    ],
+    "legacy_code": "JM055",
+    "parent_code": "JM055",
+    "packaging": [
+      "208L",
+      "60L",
+      "4 x 5L",
+      "4 x 4L",
+      "12 x 1L"
+    ],
+    "sku_rows": [
+      {
+        "sku": "JM05501",
+        "size": "208L"
+      },
+      {
+        "sku": "JM05502",
+        "size": "60L"
+      },
+      {
+        "sku": "JM05507",
+        "size": "4 x 5L"
+      },
+      {
+        "sku": "JM05508",
+        "size": "4 x 4L"
+      },
+      {
+        "sku": "JM05509",
+        "size": "12 x 1L"
+      }
+    ],
+    "sku_size": "JM05501 — 208L | JM05502 — 60L | JM05507 — 4 x 5L | JM05508 — 4 x 4L | JM05509 — 12 x 1L",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/1LT_MAGMA-X-100-5W-30.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/MAGMA-X-100_EN_vF23.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/magma-x-100/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "MAGMA X-100",
+    "viscosity": "5W-40",
+    "standards": [
+      "VW 501.01",
+      "VW 505.00",
+      "MB 229.1",
+      "ACEA A3/B3",
+      "API SL"
+    ],
+    "search_keys": [
+      "VW50101",
+      "VW50500",
+      "VW505",
+      "MB2291",
+      "ACEAA3B3",
+      "APISL"
+    ],
+    "legacy_code": "JM060",
+    "parent_code": "JM060",
+    "packaging": [
+      "208L",
+      "60L",
+      "4 x 5L",
+      "4 x 4L",
+      "12 x 1L"
+    ],
+    "sku_rows": [
+      {
+        "sku": "JM06001",
+        "size": "208L"
+      },
+      {
+        "sku": "JM06002",
+        "size": "60L"
+      },
+      {
+        "sku": "JM06007",
+        "size": "4 x 5L"
+      },
+      {
+        "sku": "JM06008",
+        "size": "4 x 4L"
+      },
+      {
+        "sku": "JM06009",
+        "size": "12 x 1L"
+      }
+    ],
+    "sku_size": "JM06001 — 208L | JM06002 — 60L | JM06007 — 4 x 5L | JM06008 — 4 x 4L | JM06009 — 12 x 1L",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/1LT_MAGMA-X-100-5W-30.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/MAGMA-X-100_EN_vF23.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/magma-x-100/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "MAGMA X-100",
+    "viscosity": "10W-40",
+    "standards": [
+      "VW 501.01",
+      "VW 505.00",
+      "MB 229.1",
+      "ACEA A3/B3",
+      "API SL"
+    ],
+    "search_keys": [
+      "VW50101",
+      "VW50500",
+      "VW505",
+      "MB2291",
+      "ACEAA3B3",
+      "APISL"
+    ],
+    "legacy_code": "JM065",
+    "parent_code": "JM065",
+    "packaging": [
+      "208L",
+      "60L",
+      "20L",
+      "4 x 5L",
+      "4 x 4L",
+      "12 x 1L"
+    ],
+    "sku_rows": [
+      {
+        "sku": "JM06501",
+        "size": "208L"
+      },
+      {
+        "sku": "JM06502",
+        "size": "60L"
+      },
+      {
+        "sku": "JM06504",
+        "size": "20L"
+      },
+      {
+        "sku": "JM06507",
+        "size": "4 x 5L"
+      },
+      {
+        "sku": "JM06508",
+        "size": "4 x 4L"
+      },
+      {
+        "sku": "JM06509",
+        "size": "12 x 1L"
+      }
+    ],
+    "sku_size": "JM06501 — 208L | JM06502 — 60L | JM06504 — 20L | JM06507 — 4 x 5L | JM06508 — 4 x 4L | JM06509 — 12 x 1L",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/1LT_MAGMA-X-100-5W-30.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/MAGMA-X-100_EN_vF23.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/magma-x-100/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "MAGMA SYN TDI",
+    "viscosity": "5W-40",
+    "standards": [
+      "VW 505.01",
+      "VW 502.00",
+      "MB-Approval 229.51",
+      "MB 229.31",
+      "BMW LongLife-04",
+      "Porsche A40",
+      "ACEA C3",
+      "API SN",
+      "Ford WSS M2C-917A",
+      "WSS M2C-917A",
+      "dexos2"
+    ],
+    "search_keys": [
+      "VW50501",
+      "VW50200",
+      "VW502",
+      "MB22951",
+      "MB22931",
+      "BMWLL04",
+      "PORSCHEA40",
+      "ACEAC3",
+      "APISN",
+      "FORDWSSM2C917A",
+      "WSSM2C917A",
+      "DEXOS2"
+    ],
+    "legacy_code": "JM020",
+    "parent_code": "JM020",
+    "packaging": [
+      "208L",
+      "60L",
+      "20L",
+      "4 x 5L",
+      "4 x 4L",
+      "12 x 1L"
+    ],
+    "sku_rows": [
+      {
+        "sku": "JM02001",
+        "size": "208L"
+      },
+      {
+        "sku": "JM02002",
+        "size": "60L"
+      },
+      {
+        "sku": "JM02004",
+        "size": "20L"
+      },
+      {
+        "sku": "JM02007",
+        "size": "4 x 5L"
+      },
+      {
+        "sku": "JM02008",
+        "size": "4 x 4L"
+      },
+      {
+        "sku": "JM02009",
+        "size": "12 x 1L"
+      }
+    ],
+    "sku_size": "JM02001 — 208L | JM02002 — 60L | JM02004 — 20L | JM02007 — 4 x 5L | JM02008 — 4 x 4L | JM02009 — 12 x 1L",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/1LT_MAGMA-SYN-TDI-5W-40.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/MAGMA-SYN-TDI-5W40_EN_vMay24-.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/magma-syn-tdi/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "MAGMA SYN RNL",
+    "viscosity": "5W-30",
+    "standards": [
+      "MB 226.51",
+      "ACEA C4",
+      "Renault RN 0720",
+      "RN 0720"
+    ],
+    "search_keys": [
+      "MB22651",
+      "ACEAC4",
+      "RENAULTRN0720",
+      "RN0720"
+    ],
+    "legacy_code": "JM025",
+    "parent_code": "JM025",
+    "packaging": [
+      "208L",
+      "20L",
+      "4 x 5L",
+      "4 x 4L",
+      "12 x 1L"
+    ],
+    "sku_rows": [
+      {
+        "sku": "JM02501",
+        "size": "208L"
+      },
+      {
+        "sku": "JM02504",
+        "size": "20L"
+      },
+      {
+        "sku": "JM02507",
+        "size": "4 x 5L"
+      },
+      {
+        "sku": "JM02508",
+        "size": "4 x 4L"
+      },
+      {
+        "sku": "JM02509",
+        "size": "12 x 1L"
+      }
+    ],
+    "sku_size": "JM02501 — 208L | JM02504 — 20L | JM02507 — 4 x 5L | JM02508 — 4 x 4L | JM02509 — 12 x 1L",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/1LT_MAGMA-SYN-RNL-5W-30.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/MAGMA-SYN-RNL-5W30_EN_vMay24.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/magma-syn-rnl/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "MAGMA SYN RC",
+    "viscosity": "5W-50",
+    "standards": [
+      "MB 229.5",
+      "MB 229.3",
+      "BMW LongLife-01",
+      "Porsche A40",
+      "ACEA A3/B4",
+      "API SN",
+      "Renault RN 0710",
+      "RN 0710",
+      "RN 0700"
+    ],
+    "search_keys": [
+      "MB2295",
+      "MB2293",
+      "BMWLL01",
+      "PORSCHEA40",
+      "ACEAA3B4",
+      "APISN",
+      "RENAULTRN0710",
+      "RN0710",
+      "RN0700"
+    ],
+    "legacy_code": "JM045",
+    "parent_code": "JM045",
+    "packaging": [
+      "208L",
+      "4 x 5L",
+      "4 x 4L",
+      "12 x 1L"
+    ],
+    "sku_rows": [
+      {
+        "sku": "JM04501",
+        "size": "208L"
+      },
+      {
+        "sku": "JM04507",
+        "size": "4 x 5L"
+      },
+      {
+        "sku": "JM04508",
+        "size": "4 x 4L"
+      },
+      {
+        "sku": "JM04509",
+        "size": "12 x 1L"
+      }
+    ],
+    "sku_size": "JM04501 — 208L | JM04507 — 4 x 5L | JM04508 — 4 x 4L | JM04509 — 12 x 1L",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/1LT_MAGMA-SYN-RC-5W-50.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/MAGMA-SYN-RC-5W50_EN_vAl23.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/magma-syn-rc/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "MAGMA SYN PSA",
+    "viscosity": "5W-30",
+    "standards": [
+      "ACEA C2"
+    ],
+    "search_keys": [
+      "ACEAC2"
+    ],
+    "legacy_code": "JM030",
+    "parent_code": "JM030",
+    "packaging": [
+      "208L",
+      "20L",
+      "4 x 5L",
+      "4 x 4L",
+      "12 x 1L"
+    ],
+    "sku_rows": [
+      {
+        "sku": "JM03001",
+        "size": "208L"
+      },
+      {
+        "sku": "JM03004",
+        "size": "20L"
+      },
+      {
+        "sku": "JM03007",
+        "size": "4 x 5L"
+      },
+      {
+        "sku": "JM03008",
+        "size": "4 x 4L"
+      },
+      {
+        "sku": "JM03009",
+        "size": "12 x 1L"
+      }
+    ],
+    "sku_size": "JM03001 — 208L | JM03004 — 20L | JM03007 — 4 x 5L | JM03008 — 4 x 4L | JM03009 — 12 x 1L",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/1LT_MAGMA-SYN-PSA-5W-30.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/MAGMA-SYN-PSA-5W30_EN_vOct25.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/magma-syn-psa/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "MAGMA SYN FD",
+    "viscosity": "5W-20",
+    "standards": [
+      "ACEA C5",
+      "ACEA A1/B1",
+      "API SN",
+      "API CF",
+      "Ford WSS M2C-948B",
+      "WSS M2C-948B",
+      "Jaguar-Land Rover STJLR.03.5004"
+    ],
+    "search_keys": [
+      "ACEAC5",
+      "ACEAA1B1",
+      "APISN",
+      "APICF",
+      "FORDWSSM2C948B",
+      "WSSM2C948B",
+      "JAGUARLANDROVERSTJLR035004"
+    ],
+    "legacy_code": "JM005",
+    "parent_code": "JM005",
+    "packaging": [
+      "4 x 5L",
+      "4 x 4L",
+      "12 x 1L"
+    ],
+    "sku_rows": [
+      {
+        "sku": "JM00507",
+        "size": "4 x 5L"
+      },
+      {
+        "sku": "JM00508",
+        "size": "4 x 4L"
+      },
+      {
+        "sku": "JM00509",
+        "size": "12 x 1L"
+      }
+    ],
+    "sku_size": "JM00507 — 4 x 5L | JM00508 — 4 x 4L | JM00509 — 12 x 1L",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/1LT_MAGMA-SYN-FD-5W-20.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/MAGMA-SYN-FD-5W20_EN_vAl23.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/magma-syn-fd/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "MAGMA SYN F1 15W40",
+    "viscosity": "15W-40",
+    "standards": [
+      "VW 505.00",
+      "VW 501.01",
+      "MB 229.1",
+      "ACEA A3/B3",
+      "API SL"
+    ],
+    "search_keys": [
+      "VW50500",
+      "VW505",
+      "VW50101",
+      "MB2291",
+      "ACEAA3B3",
+      "APISL"
+    ],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [
+      "208L",
+      "4 x 5L",
+      "4 x 4L",
+      "12 x 1L"
+    ],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/1LT_MAGMA-SYN-F1-15W-40.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/MAGMA-SYN-F1-15W-40_EN_May24.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/magma-syn-f1-15w40/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "MAGMA SYN F1 10W40",
+    "viscosity": "10W-40",
+    "standards": [
+      "VW 505.00",
+      "VW 502.00",
+      "MB-Approval 229.3",
+      "MB 229.1",
+      "ACEA A3/B3",
+      "API SN",
+      "Renault RN 0700",
+      "RN 0700"
+    ],
+    "search_keys": [
+      "VW50500",
+      "VW505",
+      "VW50200",
+      "VW502",
+      "MB2293",
+      "MB2291",
+      "ACEAA3B3",
+      "APISN",
+      "RENAULTRN0700",
+      "RN0700"
+    ],
+    "legacy_code": "JM130",
+    "parent_code": "JM130",
+    "packaging": [
+      "208L",
+      "4 x 5L",
+      "4 x 4L",
+      "12 x 1L"
+    ],
+    "sku_rows": [
+      {
+        "sku": "JM13001",
+        "size": "208L"
+      },
+      {
+        "sku": "JM13007",
+        "size": "4 x 5L"
+      },
+      {
+        "sku": "JM13008",
+        "size": "4 x 4L"
+      },
+      {
+        "sku": "JM13009",
+        "size": "12 x 1L"
+      }
+    ],
+    "sku_size": "JM13001 — 208L | JM13007 — 4 x 5L | JM13008 — 4 x 4L | JM13009 — 12 x 1L",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/1LT_MAGMA-SYN-F1-10W-40.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/MAGMA-SYN-F1-10W40_5W40_EN_vMay24.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/magma-syn-f1-10w40/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "MAGMA SYN DXS",
+    "viscosity": "5W-30",
+    "standards": [
+      "VW 505.00",
+      "VW 505.01",
+      "VW 502.00",
+      "MB-Approval 229.51",
+      "MB-Approval 229.52",
+      "BMW LongLife-04",
+      "ACEA C2",
+      "API SN",
+      "API CF",
+      "dexos2"
+    ],
+    "search_keys": [
+      "VW50500",
+      "VW505",
+      "VW50501",
+      "VW50200",
+      "VW502",
+      "MB22951",
+      "MB22952",
+      "BMWLL04",
+      "ACEAC2",
+      "APISN",
+      "APICF",
+      "DEXOS2"
+    ],
+    "legacy_code": "JM015",
+    "parent_code": "JM015",
+    "packaging": [
+      "208L",
+      "60L",
+      "20L",
+      "4 x 5L",
+      "4 x 4L",
+      "12 x 1L"
+    ],
+    "sku_rows": [
+      {
+        "sku": "JM01501",
+        "size": "208L"
+      },
+      {
+        "sku": "JM01502",
+        "size": "60L"
+      },
+      {
+        "sku": "JM01504",
+        "size": "20L"
+      },
+      {
+        "sku": "JM01507",
+        "size": "4 x 5L"
+      },
+      {
+        "sku": "JM01508",
+        "size": "4 x 4L"
+      },
+      {
+        "sku": "JM01509",
+        "size": "12 x 1L"
+      }
+    ],
+    "sku_size": "JM01501 — 208L | JM01502 — 60L | JM01504 — 20L | JM01507 — 4 x 5L | JM01508 — 4 x 4L | JM01509 — 12 x 1L",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/MAGMA_SYN_DXS-1lt.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/MAGMA-SYN-DXS-5W30_EN_vMay24-.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/magma-syn-dxs/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "MAGMA SYN ULTRA",
+    "viscosity": "0W-40",
+    "standards": [
+      "VW 502.00",
+      "VW 505.00",
+      "MB 229.5",
+      "Porsche A40",
+      "ACEA A3/B3",
+      "API SN",
+      "Renault RN 0700",
+      "RN 0700",
+      "RN 0710"
+    ],
+    "search_keys": [
+      "VW50200",
+      "VW502",
+      "VW50500",
+      "VW505",
+      "MB2295",
+      "PORSCHEA40",
+      "ACEAA3B3",
+      "APISN",
+      "RENAULTRN0700",
+      "RN0700",
+      "RN0710"
+    ],
+    "legacy_code": "JM033",
+    "parent_code": "JM033",
+    "packaging": [
+      "208L",
+      "4 x 4L",
+      "12 x 1L"
+    ],
+    "sku_rows": [
+      {
+        "sku": "JM03301",
+        "size": "208L"
+      },
+      {
+        "sku": "JM03308",
+        "size": "4 x 4L"
+      },
+      {
+        "sku": "JM03309",
+        "size": "12 x 1L"
+      }
+    ],
+    "sku_size": "JM03301 — 208L | JM03308 — 4 x 4L | JM03309 — 12 x 1L",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/1LT_MAGMA-SYN-ULTRA-5W-30.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/MAGMA-SYN-ULTRA_EN_vMay24-.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/magma-syn-ultra/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "MAGMA SYN ULTRA",
+    "viscosity": "5W-30",
+    "standards": [
+      "VW 502.00",
+      "VW 505.00",
+      "MB 229.5",
+      "MB 229.3",
+      "BMW LongLife-01",
+      "ACEA A3/B4",
+      "API SL",
+      "API SN",
+      "Renault RN 0710",
+      "RN 0710",
+      "RN 0700"
+    ],
+    "search_keys": [
+      "VW50200",
+      "VW502",
+      "VW50500",
+      "VW505",
+      "MB2295",
+      "MB2293",
+      "BMWLL01",
+      "ACEAA3B4",
+      "APISL",
+      "APISN",
+      "RENAULTRN0710",
+      "RN0710",
+      "RN0700"
+    ],
+    "legacy_code": "JM035",
+    "parent_code": "JM035",
+    "packaging": [
+      "208L",
+      "60L",
+      "20L",
+      "4 x 5L",
+      "4 x 4L",
+      "12 x 1L"
+    ],
+    "sku_rows": [
+      {
+        "sku": "JM03501",
+        "size": "208L"
+      },
+      {
+        "sku": "JM03502",
+        "size": "60L"
+      },
+      {
+        "sku": "JM03504",
+        "size": "20L"
+      },
+      {
+        "sku": "JM03507",
+        "size": "4 x 5L"
+      },
+      {
+        "sku": "JM03508",
+        "size": "4 x 4L"
+      },
+      {
+        "sku": "JM03509",
+        "size": "12 x 1L"
+      }
+    ],
+    "sku_size": "JM03501 — 208L | JM03502 — 60L | JM03504 — 20L | JM03507 — 4 x 5L | JM03508 — 4 x 4L | JM03509 — 12 x 1L",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/1LT_MAGMA-SYN-ULTRA-5W-30.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/MAGMA-SYN-ULTRA_EN_vMay24-.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/magma-syn-ultra/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "MAGMA SYN ULTRA",
+    "viscosity": "5W-40",
+    "standards": [
+      "VW 502.00",
+      "VW 505.00",
+      "MB-Approval 229.5",
+      "BMW LongLife-01",
+      "Porsche A40",
+      "ACEA A3/B4",
+      "API SN",
+      "Renault RN 0700",
+      "RN 0700",
+      "RN 0710",
+      "PSA B71 2296"
+    ],
+    "search_keys": [
+      "VW50200",
+      "VW502",
+      "VW50500",
+      "VW505",
+      "MB2295",
+      "BMWLL01",
+      "PORSCHEA40",
+      "ACEAA3B4",
+      "APISN",
+      "RENAULTRN0700",
+      "RN0700",
+      "RN0710",
+      "PSAB712296"
+    ],
+    "legacy_code": "JM040",
+    "parent_code": "JM040",
+    "packaging": [
+      "208L",
+      "60L",
+      "20L",
+      "4 x 5L",
+      "4 x 4L",
+      "12 x 1L"
+    ],
+    "sku_rows": [
+      {
+        "sku": "JM04001",
+        "size": "208L"
+      },
+      {
+        "sku": "JM04002",
+        "size": "60L"
+      },
+      {
+        "sku": "JM04004",
+        "size": "20L"
+      },
+      {
+        "sku": "JM04007",
+        "size": "4 x 5L"
+      },
+      {
+        "sku": "JM04008",
+        "size": "4 x 4L"
+      },
+      {
+        "sku": "JM04009",
+        "size": "12 x 1L"
+      }
+    ],
+    "sku_size": "JM04001 — 208L | JM04002 — 60L | JM04004 — 20L | JM04007 — 4 x 5L | JM04008 — 4 x 4L | JM04009 — 12 x 1L",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/1LT_MAGMA-SYN-ULTRA-5W-30.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/MAGMA-SYN-ULTRA_EN_vMay24-.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/magma-syn-ultra/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "MAGMA SUPER",
+    "viscosity": "5W-30",
+    "standards": [
+      "API SL"
+    ],
+    "search_keys": [
+      "APISL"
+    ],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [
+      "4 x 4L"
+    ],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/1LT_MAGMA-SUPER-15W-50.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/MAGMA-SUPER_EN_vAl23.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/magma-super/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "MAGMA SUPER",
+    "viscosity": "10W-40",
+    "standards": [
+      "API SL"
+    ],
+    "search_keys": [
+      "APISL"
+    ],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [
+      "4 x 4L"
+    ],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/1LT_MAGMA-SUPER-15W-50.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/MAGMA-SUPER_EN_vAl23.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/magma-super/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "MAGMA SUPER",
+    "viscosity": "15W-40",
+    "standards": [
+      "VW 501.01",
+      "VW 505.00",
+      "MB 229.1",
+      "ACEA A3/B3",
+      "API SL"
+    ],
+    "search_keys": [
+      "VW50101",
+      "VW50500",
+      "VW505",
+      "MB2291",
+      "ACEAA3B3",
+      "APISL"
+    ],
+    "legacy_code": "JM070",
+    "parent_code": "JM070",
+    "packaging": [
+      "208L",
+      "4 x 5L",
+      "4 x 4L",
+      "12 x 1L"
+    ],
+    "sku_rows": [
+      {
+        "sku": "JM07001",
+        "size": "208L"
+      },
+      {
+        "sku": "JM07007",
+        "size": "4 x 5L"
+      },
+      {
+        "sku": "JM07008",
+        "size": "4 x 4L"
+      },
+      {
+        "sku": "JM07009",
+        "size": "12 x 1L"
+      }
+    ],
+    "sku_size": "JM07001 — 208L | JM07007 — 4 x 5L | JM07008 — 4 x 4L | JM07009 — 12 x 1L",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/1LT_MAGMA-SUPER-15W-50.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/MAGMA-SUPER_EN_vAl23.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/magma-super/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "MAGMA SUPER",
+    "viscosity": "15W-50",
+    "standards": [
+      "VW 501.01",
+      "VW 505.00",
+      "MB 229.1",
+      "ACEA A3/B3",
+      "API SL"
+    ],
+    "search_keys": [
+      "VW50101",
+      "VW50500",
+      "VW505",
+      "MB2291",
+      "ACEAA3B3",
+      "APISL"
+    ],
+    "legacy_code": "JM075",
+    "parent_code": "JM075",
+    "packaging": [
+      "208L",
+      "4 x 4L",
+      "12 x 1L"
+    ],
+    "sku_rows": [
+      {
+        "sku": "JM07501",
+        "size": "208L"
+      },
+      {
+        "sku": "JM07508",
+        "size": "4 x 4L"
+      },
+      {
+        "sku": "JM07509",
+        "size": "12 x 1L"
+      }
+    ],
+    "sku_size": "JM07501 — 208L | JM07508 — 4 x 4L | JM07509 — 12 x 1L",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/1LT_MAGMA-SUPER-15W-50.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/MAGMA-SUPER_EN_vAl23.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/magma-super/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "MAGMA SUPER",
+    "viscosity": "20W-50",
+    "standards": [
+      "VW 501.01",
+      "VW 505.00",
+      "MB 229.1",
+      "ACEA A3/B3",
+      "API SL"
+    ],
+    "search_keys": [
+      "VW50101",
+      "VW50500",
+      "VW505",
+      "MB2291",
+      "ACEAA3B3",
+      "APISL"
+    ],
+    "legacy_code": "JM080",
+    "parent_code": "JM080",
+    "packaging": [
+      "208L",
+      "60L",
+      "4 x 4L",
+      "12 x 1L"
+    ],
+    "sku_rows": [
+      {
+        "sku": "JM08001",
+        "size": "208L"
+      },
+      {
+        "sku": "JM08002",
+        "size": "60L"
+      },
+      {
+        "sku": "JM08008",
+        "size": "4 x 4L"
+      },
+      {
+        "sku": "JM08009",
+        "size": "12 x 1L"
+      }
+    ],
+    "sku_size": "JM08001 — 208L | JM08002 — 60L | JM08008 — 4 x 4L | JM08009 — 12 x 1L",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/1LT_MAGMA-SUPER-15W-50.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/MAGMA-SUPER_EN_vAl23.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/magma-super/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "MAGMA SYN V1",
+    "viscosity": "0W-30",
+    "standards": [
+      "VW 504.00",
+      "VW 507.00",
+      "MB 229.51",
+      "BMW LongLife-04",
+      "Porsche C30",
+      "API SN"
+    ],
+    "search_keys": [
+      "VW50400",
+      "VW504",
+      "VW50700",
+      "VW507",
+      "MB22951",
+      "BMWLL04",
+      "PORSCHEC30",
+      "APISN"
+    ],
+    "legacy_code": "JM009",
+    "parent_code": "JM009",
+    "packaging": [
+      "208L",
+      "4 x 4L",
+      "12 x 1L"
+    ],
+    "sku_rows": [
+      {
+        "sku": "JM00901",
+        "size": "208L"
+      },
+      {
+        "sku": "JM00908",
+        "size": "4 x 4L"
+      },
+      {
+        "sku": "JM00909",
+        "size": "12 x 1L"
+      }
+    ],
+    "sku_size": "JM00901 — 208L | JM00908 — 4 x 4L | JM00909 — 12 x 1L",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/1LT_MAGMA-SYN-V1-5W-30.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/MAGMA-SYN-V1_EN_vMay24.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/magma-syn-v1/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "MAGMA SYN V1",
+    "viscosity": "5W-30",
+    "standards": [
+      "VW 504.00",
+      "VW 507.00",
+      "MB 229.51",
+      "MB 229.31",
+      "BMW LongLife-04",
+      "Porsche C30",
+      "ACEA C2",
+      "API SN"
+    ],
+    "search_keys": [
+      "VW50400",
+      "VW504",
+      "VW50700",
+      "VW507",
+      "MB22951",
+      "MB22931",
+      "BMWLL04",
+      "PORSCHEC30",
+      "ACEAC2",
+      "APISN"
+    ],
+    "legacy_code": "JM010",
+    "parent_code": "JM010",
+    "packaging": [
+      "208L",
+      "60L",
+      "20L",
+      "4 x 5L",
+      "4 x 4L",
+      "12 x 1L"
+    ],
+    "sku_rows": [
+      {
+        "sku": "JM01001",
+        "size": "208L"
+      },
+      {
+        "sku": "JM01002",
+        "size": "60L"
+      },
+      {
+        "sku": "JM01004",
+        "size": "20L"
+      },
+      {
+        "sku": "JM01007",
+        "size": "4 x 5L"
+      },
+      {
+        "sku": "JM01008",
+        "size": "4 x 4L"
+      },
+      {
+        "sku": "JM01009",
+        "size": "12 x 1L"
+      }
+    ],
+    "sku_size": "JM01001 — 208L | JM01002 — 60L | JM01004 — 20L | JM01007 — 4 x 5L | JM01008 — 4 x 4L | JM01009 — 12 x 1L",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/1LT_MAGMA-SYN-V1-5W-30.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/MAGMA-SYN-V1_EN_vMay24.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/magma-syn-v1/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "MAGMA HYPER X-200",
+    "viscosity": "5W-30",
+    "standards": [
+      "API SP",
+      "API SN"
+    ],
+    "search_keys": [
+      "APISP",
+      "APISN"
+    ],
+    "legacy_code": "JM150",
+    "parent_code": "JM150",
+    "packaging": [
+      "208L",
+      "60L",
+      "4 x 4L",
+      "12 x 1L"
+    ],
+    "sku_rows": [
+      {
+        "sku": "JM15001",
+        "size": "208L"
+      },
+      {
+        "sku": "JM15002",
+        "size": "60L"
+      },
+      {
+        "sku": "JM15008",
+        "size": "4 x 4L"
+      },
+      {
+        "sku": "JM15009",
+        "size": "12 x 1L"
+      }
+    ],
+    "sku_size": "JM15001 — 208L | JM15002 — 60L | JM15008 — 4 x 4L | JM15009 — 12 x 1L",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/1LT_MAGMA-HYPER-X200-5W-30.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/MAGMA-HYPER-X-200_EN_vJl24.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/magma-hyper-x-200/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "MAGMA HYPER X-200",
+    "viscosity": "5W-40",
+    "standards": [
+      "API SP",
+      "API SN"
+    ],
+    "search_keys": [
+      "APISP",
+      "APISN"
+    ],
+    "legacy_code": "JM155",
+    "parent_code": "JM155",
+    "packaging": [
+      "208L",
+      "60L",
+      "4 x 4L",
+      "12 x 1L"
+    ],
+    "sku_rows": [
+      {
+        "sku": "JM15501",
+        "size": "208L"
+      },
+      {
+        "sku": "JM15502",
+        "size": "60L"
+      },
+      {
+        "sku": "JM15508",
+        "size": "4 x 4L"
+      },
+      {
+        "sku": "JM15509",
+        "size": "12 x 1L"
+      }
+    ],
+    "sku_size": "JM15501 — 208L | JM15502 — 60L | JM15508 — 4 x 4L | JM15509 — 12 x 1L",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/1LT_MAGMA-HYPER-X200-5W-30.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/MAGMA-HYPER-X-200_EN_vJl24.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/magma-hyper-x-200/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "MAGMA HYPER X-200",
+    "viscosity": "10W-40",
+    "standards": [
+      "API SP",
+      "API SN"
+    ],
+    "search_keys": [
+      "APISP",
+      "APISN"
+    ],
+    "legacy_code": "JM160",
+    "parent_code": "JM160",
+    "packaging": [
+      "4 x 4L"
+    ],
+    "sku_rows": [
+      {
+        "sku": "JM16008",
+        "size": "4 x 4L"
+      }
+    ],
+    "sku_size": "JM16008 — 4 x 4L",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/1LT_MAGMA-HYPER-X200-5W-30.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/MAGMA-HYPER-X-200_EN_vJl24.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/magma-hyper-x-200/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "GRANIT NATGAS",
+    "viscosity": "40",
+    "standards": [
+      "API CD"
+    ],
+    "search_keys": [
+      "APICD"
+    ],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/208-L-2.png",
+    "tds": "",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/granit-natgas/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "GRANIT PRO EURO MAXX",
+    "viscosity": "10W-40",
+    "standards": [
+      "MB 228.51",
+      "ACEA E9",
+      "ACEA E7",
+      "API CK-4"
+    ],
+    "search_keys": [
+      "MB22851",
+      "ACEAE9",
+      "ACEAE7",
+      "APICK4"
+    ],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [
+      "208L",
+      "60L",
+      "25L",
+      "20L",
+      "4 x 4L"
+    ],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2024/05/25LT_GRANIT_PRO_EURO_MAXX_10W40.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2024/05/GRANIT_PRO_EURO_MAXX_10W40_TECHNICAL_DATA_SHEET.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/granit-pro-euro-maxx/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "GRANIT MAXIMUM",
+    "viscosity": "15W-40",
+    "standards": [
+      "MB-Approval 228.3",
+      "API CI-4"
+    ],
+    "search_keys": [
+      "MB2283",
+      "APICI4"
+    ],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [
+      "208L",
+      "60L",
+      "25L",
+      "20L",
+      "4 x 5L",
+      "4 x 4L",
+      "12 x 1L"
+    ],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/20LT_GRANIT-MAXIMUM-15W-40.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/GRANIT-MAXIMUM-15W40_EN_vJa21.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/granit-maximum/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "GRANIT SYN EURO FLEET",
+    "viscosity": "10W-40",
+    "standards": [
+      "MB-Approval 228.5",
+      "ACEA E4",
+      "API CI-4"
+    ],
+    "search_keys": [
+      "MB2285",
+      "ACEAE4",
+      "APICI4"
+    ],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [
+      "208L",
+      "25L",
+      "20L"
+    ],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/25LT_GRANIT-SYN-EURO-FLEET-10W-40.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/GRANIT-SYN-EURO-FLEET-10W40_EN_vJa21.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/granit-syn-euro-fleet/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "GRANIT SYN EURO DXL",
+    "viscosity": "5W-30",
+    "standards": [
+      "MB 228.5",
+      "MB 235.28",
+      "ACEA E4",
+      "API CF"
+    ],
+    "search_keys": [
+      "MB2285",
+      "MB23528",
+      "ACEAE4",
+      "APICF"
+    ],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [
+      "208L",
+      "25L"
+    ],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/25LT_GRANIT-SYN-EURO-DXL-5W-30.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/GRANIT-SYN-EURO-DXL-5W30_EN_vJa21.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/granit-syn-euro-dxl-5w30/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "FARMA",
+    "viscosity": "15W-40",
+    "standards": [
+      "ACEA E3",
+      "Ford WSS M2C-159B",
+      "WSS M2C-159B",
+      "WSS M2C-159C",
+      "WSS M2C-134D",
+      "WSS-86B",
+      "WSS-86C"
+    ],
+    "search_keys": [
+      "ACEAE3",
+      "FORDWSSM2C159B",
+      "WSSM2C159B",
+      "WSSM2C159C",
+      "WSSM2C134D",
+      "WSS86B",
+      "WSS86C"
+    ],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [
+      "208L",
+      "20L"
+    ],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/20LT_FARMA-15W-40.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/FARMA-STOU_EN-vAl23.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/farma-15w40/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "FARMA PRIME",
+    "viscosity": "20W-30",
+    "standards": [
+      "ACEA E3",
+      "Ford WSS M2C-159B",
+      "WSS M2C-159B",
+      "WSS M2C-159C",
+      "WSS M2C-134D",
+      "WSS-86B",
+      "WSS-86C"
+    ],
+    "search_keys": [
+      "ACEAE3",
+      "FORDWSSM2C159B",
+      "WSSM2C159B",
+      "WSSM2C159C",
+      "WSSM2C134D",
+      "WSS86B",
+      "WSS86C"
+    ],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [
+      "208L",
+      "20L"
+    ],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/20LT_FARMA-PRIME-20W-30.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/FARMA-STOU_EN_vJa21.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/farma-prime-20w30/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "GRANIT VDS",
+    "viscosity": "10W-30",
+    "standards": [
+      "MB 228.31",
+      "ACEA E9",
+      "API CK-4"
+    ],
+    "search_keys": [
+      "MB22831",
+      "ACEAE9",
+      "APICK4"
+    ],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [
+      "208L",
+      "20L"
+    ],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/20LT_GRANIT-VDS-15W-40.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/GRANIT-VDS_EN-vF23.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/granit-vds/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "GRANIT VDS",
+    "viscosity": "10W-40",
+    "standards": [
+      "MB 228.31",
+      "ACEA E9",
+      "API CK-4"
+    ],
+    "search_keys": [
+      "MB22831",
+      "ACEAE9",
+      "APICK4"
+    ],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [
+      "208L",
+      "20L"
+    ],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/20LT_GRANIT-VDS-15W-40.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/GRANIT-VDS_EN-vF23.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/granit-vds/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "GRANIT VDS",
+    "viscosity": "15W-40",
+    "standards": [
+      "MB-Approval 228.31",
+      "ACEA E9",
+      "API CK-4"
+    ],
+    "search_keys": [
+      "MB22831",
+      "ACEAE9",
+      "APICK4"
+    ],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [
+      "208L",
+      "20L"
+    ],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/20LT_GRANIT-VDS-15W-40.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/GRANIT-VDS_EN-vF23.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/granit-vds/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "ERGON",
+    "viscosity": "",
+    "standards": [
+      "API CF",
+      "API CF-2",
+      "Caterpillar TO-4",
+      "Komatsu KES 07.868.1",
+      "Allison C-4",
+      "ZF TE-ML 03C"
+    ],
+    "search_keys": [
+      "APICF",
+      "APICF2",
+      "CATERPILLARTO4",
+      "KOMATSUKES078681",
+      "ALLISONC4",
+      "ZFTEML03C"
+    ],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/20LT_GRANIT-ERGON-10W.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/GRANIT-ERGON_EN-vAl23.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/ergon-10w/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "GRANIT SYN SHPD PLUS",
+    "viscosity": "10W-40",
+    "standards": [
+      "MB-Approval 228.3",
+      "MB 229.1",
+      "ACEA E7",
+      "API CI-4"
+    ],
+    "search_keys": [
+      "MB2283",
+      "MB2291",
+      "ACEAE7",
+      "APICI4"
+    ],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [
+      "208L",
+      "60L",
+      "20L",
+      "4 x 4L",
+      "12 x 1L"
+    ],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/20LT_GRANIT-SYN-SHPD-PLUS-10W-40.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/GRANIT-SYN-SHPD-PLUS-10W40_EN_vJa21.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/granit-syn-shpd-plus/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "GRANIT SYN SHPD",
+    "viscosity": "15W-40",
+    "standards": [
+      "MB 228.3",
+      "MB 228.1",
+      "MB 229.1",
+      "ACEA E7",
+      "API CI-4"
+    ],
+    "search_keys": [
+      "MB2283",
+      "MB2281",
+      "MB2291",
+      "ACEAE7",
+      "APICI4"
+    ],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [
+      "208L",
+      "25L",
+      "20L",
+      "4 x 4L",
+      "12 x 1L"
+    ],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/20LT_GRANIT-SYN-SHPD-15W-40.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/GRANIT-SYN-SHPD-15W40_EN_vJa21.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/granit-syn-shpd/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "GRANIT SYN HPD",
+    "viscosity": "20W-50",
+    "standards": [
+      "MB 228.3",
+      "ACEA E7",
+      "API CI-4"
+    ],
+    "search_keys": [
+      "MB2283",
+      "ACEAE7",
+      "APICI4"
+    ],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [
+      "208L",
+      "25L",
+      "20L",
+      "4 x 4L",
+      "12 x 1L"
+    ],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/20LT_GRANIT-SYN-HPD-20W-50.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/GRANIT-SYN-HPD-20W50_EN_vJa21.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/granit-syn-hpd/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "GRANIT SUPER",
+    "viscosity": "20W-50",
+    "standards": [
+      "MB 228.3",
+      "API CI-4"
+    ],
+    "search_keys": [
+      "MB2283",
+      "APICI4"
+    ],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [
+      "208L",
+      "25L",
+      "20L",
+      "4 x 5L",
+      "4 x 4L",
+      "12 x 1L"
+    ],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/20LT_GRANIT-SUPER-20W-50.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/GRANIT-SUPER-20W50_EN_vJa21.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/granit-super/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "GRANIT S-3",
+    "viscosity": "",
+    "standards": [
+      "API CD",
+      "API SF",
+      "CCMC D2",
+      "CCMC G2",
+      "CCMC PD-2",
+      "MIL-L-2104E",
+      "MIL-L-46152B",
+      "Caterpillar TO-2"
+    ],
+    "search_keys": [
+      "APICD",
+      "APISF",
+      "CCMCD2",
+      "CCMCG2",
+      "CCMCPD2",
+      "MILL2104E",
+      "MILL46152B",
+      "CATERPILLARTO2"
+    ],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/20LT_GRANIT-S-3-30.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/GRANIT-S-3_EN_vJa21.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/granit-s-3/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "GRANIT PRIME",
+    "viscosity": "",
+    "standards": [
+      "API CF",
+      "API CF-2",
+      "API SJ",
+      "Caterpillar TO-2",
+      "Allison C-4"
+    ],
+    "search_keys": [
+      "APICF",
+      "APICF2",
+      "APISJ",
+      "CATERPILLARTO2",
+      "ALLISONC4"
+    ],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/20LT_GRANIT-PRIME-SAE-20W.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/GRANIT-PRIME_EN_vJa21.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/granit-prime/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "GRANIT MULTI",
+    "viscosity": "15W-40",
+    "standards": [
+      "API CD",
+      "API SF",
+      "CCMC D2",
+      "CCMC G2",
+      "CCMC PD-2",
+      "MIL-L-2104D",
+      "MIL-L-46152B"
+    ],
+    "search_keys": [
+      "APICD",
+      "APISF",
+      "CCMCD2",
+      "CCMCG2",
+      "CCMCPD2",
+      "MILL2104D",
+      "MILL46152B"
+    ],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [
+      "208L",
+      "20L",
+      "4 x 5L",
+      "4 x 4L",
+      "12 x 1L"
+    ],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/20LT_GRANIT-MULTI-15W-40.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/GRANIT-MULTI_EN_vJa21.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/granit-multi/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "GRANIT MULTI",
+    "viscosity": "20W-50",
+    "standards": [
+      "API CD",
+      "API SF",
+      "CCMC D2",
+      "CCMC G2",
+      "CCMC PD-2",
+      "MIL-L-2104D",
+      "MIL-L-46152B"
+    ],
+    "search_keys": [
+      "APICD",
+      "APISF",
+      "CCMCD2",
+      "CCMCG2",
+      "CCMCPD2",
+      "MILL2104D",
+      "MILL46152B"
+    ],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [
+      "208L",
+      "25L",
+      "20L",
+      "4 x 5L",
+      "4 x 4L",
+      "12 x 1L"
+    ],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/20LT_GRANIT-MULTI-15W-40.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/GRANIT-MULTI_EN_vJa21.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/granit-multi/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "GRANIT EXTRA",
+    "viscosity": "10W-40",
+    "standards": [
+      "MB 228.1",
+      "ACEA E2",
+      "API CF"
+    ],
+    "search_keys": [
+      "MB2281",
+      "ACEAE2",
+      "APICF"
+    ],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [
+      "208L",
+      "20L"
+    ],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/20LT_GRANIT-EXTRA-15W-40.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/GRANIT-EXTRA_EN-vAl23.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/granit-extra/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "GRANIT EXTRA",
+    "viscosity": "15W-40",
+    "standards": [
+      "MB-Approval 228.1",
+      "ACEA E2",
+      "API CF"
+    ],
+    "search_keys": [
+      "MB2281",
+      "ACEAE2",
+      "APICF"
+    ],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [
+      "208L",
+      "60L",
+      "20L",
+      "4 x 5L",
+      "4 x 4L",
+      "12 x 1L"
+    ],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/20LT_GRANIT-EXTRA-15W-40.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/GRANIT-EXTRA_EN-vAl23.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/granit-extra/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "GRANIT EXTRA",
+    "viscosity": "20W-50",
+    "standards": [
+      "MB 228.1",
+      "ACEA E2",
+      "API CF"
+    ],
+    "search_keys": [
+      "MB2281",
+      "ACEAE2",
+      "APICF"
+    ],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [
+      "208L",
+      "20L",
+      "4 x 5L",
+      "4 x 4L",
+      "12 x 1L"
+    ],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/20LT_GRANIT-EXTRA-15W-40.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/GRANIT-EXTRA_EN-vAl23.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/granit-extra/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "GRANIT SYN EURO MAXX",
+    "viscosity": "10W-40",
+    "standards": [
+      "MB-Approval 228.51",
+      "ACEA E6",
+      "API CI-4"
+    ],
+    "search_keys": [
+      "MB22851",
+      "ACEAE6",
+      "APICI4"
+    ],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [
+      "208L",
+      "60L",
+      "25L",
+      "20L",
+      "4 x 4L"
+    ],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/20LT_GRANIT-SYN-EURO-MAXX-10W-40.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/GRANIT-SYN-EURO-MAXX-10W40_EN_vJa21.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/granit-syn-euro-maxx/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "GRANIT SYN EURO ULTRA",
+    "viscosity": "5W-30",
+    "standards": [
+      "MB 228.52",
+      "MB 228.51",
+      "MB 228.31",
+      "MB 235.28",
+      "ACEA E9",
+      "API CK-4",
+      "Ford WSS M2C213-A1",
+      "WSS M2C213-A1"
+    ],
+    "search_keys": [
+      "MB22852",
+      "MB22851",
+      "MB22831",
+      "MB23528",
+      "ACEAE9",
+      "APICK4",
+      "FORDWSSM2C213A1",
+      "WSSM2C213A1"
+    ],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [
+      "208L",
+      "25L",
+      "20L",
+      "4 x 4L"
+    ],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/20LT_GRANIT-SYN-EURO-ULTRA-5W-30.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/GRANIT-SYN-EURO-ULTRA-5W30_EN-vMay24.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/granit-syn-euro-ultra/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "FARMA UTTO",
+    "viscosity": "10W-30/80W",
+    "standards": [
+      "API GL-4",
+      "Ford WSS-M2C-86C",
+      "Ford ESN M2C-134D",
+      "John Deere J20C",
+      "John Deere J20D",
+      "ZF TE-ML 03E",
+      "ZF TE-ML 05F",
+      "Caterpillar TO-2",
+      "Allison C-4"
+    ],
+    "search_keys": [
+      "APIGL4",
+      "FORDWSSM2C86C",
+      "FORDESNM2C134D",
+      "JOHNDEEREJ20C",
+      "JOHNDEEREJ20D",
+      "ZFTEML03E",
+      "ZFTEML05F",
+      "CATERPILLARTO2",
+      "ALLISONC4"
+    ],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/20LT_FARMA-UTTO-10W-30-80W.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/FARMA-UTTO_EN-vAl23.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/farma-utto-10w30-80w/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "FARMA FLUID",
+    "viscosity": "10W-30",
+    "standards": [
+      "ACEA E3",
+      "Ford WSS M2C-159B",
+      "WSS M2C-159B",
+      "WSS M2C-159C",
+      "WSS M2C-134D",
+      "WSS-86B",
+      "WSS-86C"
+    ],
+    "search_keys": [
+      "ACEAE3",
+      "FORDWSSM2C159B",
+      "WSSM2C159B",
+      "WSSM2C159C",
+      "WSSM2C134D",
+      "WSS86B",
+      "WSS86C"
+    ],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [
+      "208L",
+      "60L",
+      "20L",
+      "4 x 4L"
+    ],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/20LT_FARMA-FLUID-10W-30.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/FARMA-STOU_EN_vJa21.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/farma-fluid-10w30/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "LAVA SYN 4T",
+    "viscosity": "15W-50",
+    "standards": [
+      "API SL"
+    ],
+    "search_keys": [
+      "APISL"
+    ],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [
+      "60L",
+      "12 x 1L"
+    ],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/1L_gold-LAVA-SYN-4T-15W-40-copy.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/LAVA-SYN-4T-_EN-vAl23.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/lava-syn-4t/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "LAVA SYN 2T",
+    "viscosity": "",
+    "standards": [],
+    "search_keys": [],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/1L_gold-LAVA-SYN-2T-10W-40-copy.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/LAVA-SYN-2T_EN-vAl23.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/lava-syn-2t/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "LAVA TIMBER CHAIN 30 (ISO 100)",
+    "viscosity": "",
+    "standards": [],
+    "search_keys": [],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/1L_black-LAVA-TIMBER-CHAIN-copy-1.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/LAVA-TIMBER-CHAIN_EN-vAl23.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/lava-timber-chain-30-iso-100/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "LAVA SUPER 4T",
+    "viscosity": "20W-50",
+    "standards": [
+      "API SG"
+    ],
+    "search_keys": [
+      "APISG"
+    ],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [
+      "60L",
+      "12 x 1L"
+    ],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/1L_black-LAVA-SUPER-4T-20W-50-copy-1.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/LAVA-SUPER-4T-20W50_EN-vAl23.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/lava-super-4t/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "LAVA OUTBOARD 4T",
+    "viscosity": "10W-40",
+    "standards": [
+      "NMMA FC-W"
+    ],
+    "search_keys": [
+      "NMMAFCW"
+    ],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2026/01/LZR-OUTBOARD-4T-_1LT.png",
+    "tds": "",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/lava-outboard-4t/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "LAVA CYBIO-OB 2T",
+    "viscosity": "",
+    "standards": [],
+    "search_keys": [],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/LAVA_CYBIO_OB_2T_1L.png",
+    "tds": "",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/lava-cybio-ob-2t/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "LAVA 2T SUPER MIX",
+    "viscosity": "",
+    "standards": [],
+    "search_keys": [],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/1L_black-LAVA-2T-SUPER-MIX-copy-1.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/LAVA-2T-SUPER-MIX_EN-vAl23.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/lava-2t-super-mix/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "LAVA 2T SCOOTER",
+    "viscosity": "",
+    "standards": [],
+    "search_keys": [],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/1L_black-LAVA-2T-SCOOTER-1.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/LAVA-2T-SCOOTER_EN-vAl23.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/lava-2t-scooter/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "LAVA SYN RACING 4T",
+    "viscosity": "10W-40",
+    "standards": [
+      "API SL"
+    ],
+    "search_keys": [
+      "APISL"
+    ],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [
+      "60L",
+      "4 x 4L",
+      "12 x 1L"
+    ],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/1L_gold-LAVA-SYN-RACING-4T-10W-40-copy.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/LAVA-SYN-RACING-4T-10W40_EN-vAl23.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/lava-syn-racing-4t/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "LAVA OUTBOARD 2T",
+    "viscosity": "",
+    "standards": [
+      "NMMA TC-W3"
+    ],
+    "search_keys": [
+      "NMMATCW3"
+    ],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2026/01/LZR-OUTBOARD-2T-_1LT.png",
+    "tds": "",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/lava-outboard-2t/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "GEAR HD/GL-4",
+    "viscosity": "80W-90",
+    "standards": [],
+    "search_keys": [],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [
+      "208L",
+      "20L",
+      "12 x 1L"
+    ],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/4LT_-GEAR-HD-GL-4-80W-90-copy.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/GEAR-HD-GL-4-F17-_ENG.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/gear-hd-gl-4/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "ATF PROTECΤ NG 7-9",
+    "viscosity": "",
+    "standards": [
+      "MB 236.17",
+      "MB 236.16",
+      "MB 236.15"
+    ],
+    "search_keys": [
+      "MB23617",
+      "MB23616",
+      "MB23615"
+    ],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/ATF_7-9_1LT.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/ATF-PROTECT-NG-7-9-EN_v1_Al21.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/atf-protec%cf%84-ng-7-9/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "ATF PROTECΤ 8HP",
+    "viscosity": "",
+    "standards": [],
+    "search_keys": [],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/ATF_8HP_1LT.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/ATF-PROTECT-8HP-EN_v1_Al21.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/atf-protec%cf%84-8hp/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "GEAR SYN G XL",
+    "viscosity": "75W-80",
+    "standards": [],
+    "search_keys": [],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [
+      "20L",
+      "4 x 4L",
+      "12 x 1L"
+    ],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/1L_GEAR-SYN-G-XL-75W-80-copy.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/GEAR-SYN-G-XL-ENG.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/gear-syn-g-xl/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "GEAR SYN G HZ",
+    "viscosity": "75W-80",
+    "standards": [
+      "MB 235.10",
+      "Ford WSS-M2C200-D2",
+      "WSS-M2C200-D2"
+    ],
+    "search_keys": [
+      "MB23510",
+      "FORDWSSM2C200D2",
+      "WSSM2C200D2"
+    ],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [
+      "20L",
+      "4 x 4L",
+      "12 x 1L"
+    ],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/1L_GEAR-SYN-G-HZ-75W-80-copy.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/GEAR-SYN-G-HZ-ENG.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/gear-syn-g-hz/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "GEAR SYN EP",
+    "viscosity": "75W-90",
+    "standards": [],
+    "search_keys": [],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [
+      "208L",
+      "20L",
+      "12 x 1L"
+    ],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/1L_GEAR-SYN-EP-75W-90-copy.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/GEAR-SYN-EP-ENG-.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/gear-syn-ep/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "GEAR SYN EP",
+    "viscosity": "80W-90",
+    "standards": [],
+    "search_keys": [],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [
+      "208L"
+    ],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/1L_GEAR-SYN-EP-75W-90-copy.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/GEAR-SYN-EP-ENG-.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/gear-syn-ep/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "GEAR PRIME",
+    "viscosity": "",
+    "standards": [],
+    "search_keys": [],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/1L_GEAR-PRIME-80W-copy.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/GEAR-PRIME-ENG_vF19.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/gear-prime/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "GEAR LS/4X4",
+    "viscosity": "",
+    "standards": [],
+    "search_keys": [],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/Gear-LS-4χ4-85W-90.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/GEAR-LS-4X4-ENG-.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/gear-ls-4x4/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "ATF S-DCT",
+    "viscosity": "",
+    "standards": [],
+    "search_keys": [],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/1L_ATF-S-DCT-copy.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/GEAR-ATF-S-DCT-ENG-.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/atf-s-dct/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "ATF S-1A",
+    "viscosity": "",
+    "standards": [
+      "MB 236.1",
+      "MB 236.2",
+      "MB 236.3",
+      "MB 236.5",
+      "MB 236.6",
+      "MB 236.7",
+      "MB 236.9",
+      "MB 236.10",
+      "MB 236.11",
+      "MB 236.12",
+      "MB 236.14",
+      "MB 236.15",
+      "MB 236.41",
+      "MB 236.81"
+    ],
+    "search_keys": [
+      "MB2361",
+      "MB2362",
+      "MB2363",
+      "MB2365",
+      "MB2366",
+      "MB2367",
+      "MB2369",
+      "MB23610",
+      "MB23611",
+      "MB23612",
+      "MB23614",
+      "MB23615",
+      "MB23641",
+      "MB23681"
+    ],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/1L_ATF-S-1A-copy.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/GEAR-ATF-S-1A-EN_v1_Je18.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/atf-s-1a/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "ATF CVT NS-2/-1",
+    "viscosity": "",
+    "standards": [
+      "MB 236.20"
+    ],
+    "search_keys": [
+      "MB23620"
+    ],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/1L_ATF-CVT-NS-2-1-copy.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/GEAR-ATF-CVT-NS-2_-1-ENG-.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/atf-cvt-ns-2-1/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "GEAR EP/GL-5",
+    "viscosity": "80W-90",
+    "standards": [],
+    "search_keys": [],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [
+      "208L",
+      "20L",
+      "4 x 4L",
+      "12 x 1L"
+    ],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/1L_-ATF-TYPE-GL-5-copy-–-4.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/GEAR-EP-GL-5-ENG_vO18.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/gear-ep-gl-5/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "GEAR EP/GL-5",
+    "viscosity": "85W-90",
+    "standards": [],
+    "search_keys": [],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [
+      "208L",
+      "20L"
+    ],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/1L_-ATF-TYPE-GL-5-copy-–-4.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/GEAR-EP-GL-5-ENG_vO18.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/gear-ep-gl-5/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "ATF TYPE D",
+    "viscosity": "",
+    "standards": [
+      "MB 236.1",
+      "MB 236.5",
+      "MB 236.6",
+      "MB 236.7",
+      "MB 236.9"
+    ],
+    "search_keys": [
+      "MB2361",
+      "MB2365",
+      "MB2366",
+      "MB2367",
+      "MB2369"
+    ],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/1L_-ATF-TYPE-D-copy-–-1.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/GEAR-ATF-TYPE-D-ENG-.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/atf-type-d/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "GEAR BV/P-CT",
+    "viscosity": "75W-80",
+    "standards": [],
+    "search_keys": [],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [
+      "208L",
+      "20L",
+      "12 x 1L"
+    ],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/1L_-ATF-TYPE-CT-copy-–-2.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/GEAR-BV-P-CT-ENG-.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/gear-bv-p-ct/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "ATF TYPE A",
+    "viscosity": "",
+    "standards": [
+      "MB 236.2"
+    ],
+    "search_keys": [
+      "MB2362"
+    ],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/1L_-ATF-TYPE-A-copy.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/GEAR-ATF-TYPE-A-ENG-.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/atf-type-a/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "GEAR SYN TDL",
+    "viscosity": "75W-90",
+    "standards": [
+      "MB 235.8"
+    ],
+    "search_keys": [
+      "MB2358"
+    ],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [
+      "208L",
+      "20L",
+      "4 x 4L",
+      "12 x 1L"
+    ],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/1L_GEAR-SYN-TDL-75W-90.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/GEAR-SYN-TDL-ENG.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/gear-syn-tdl/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "GEAR SYN TDL",
+    "viscosity": "85W-90",
+    "standards": [],
+    "search_keys": [],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [
+      "20L"
+    ],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/1L_GEAR-SYN-TDL-75W-90.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/GEAR-SYN-TDL-ENG.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/gear-syn-tdl/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "WHITE OIL (TECH.)",
+    "viscosity": "",
+    "standards": [],
+    "search_keys": [],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/20LT_INDUSTRIAL-WHITE-OIL-TECH-copy.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/WHITE-OIL-TECHNICAL_EN_vJa21.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/white-oil-tech/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "WHITE OIL",
+    "viscosity": "",
+    "standards": [],
+    "search_keys": [],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/20LT_INDUSTRIAL-WHITE-OIL-15-copy.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/WHITE-OIL_EN_vJa21.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/white-oil/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "TURBINE",
+    "viscosity": "",
+    "standards": [],
+    "search_keys": [],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/20LT_-INDUSTRIAL-TURBINE-32-copy.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/TURBINE_EN_vJa21.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/turbine/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "TITANUS EP SYNPAO",
+    "viscosity": "",
+    "standards": [],
+    "search_keys": [],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/20LT_-INDUSTRIAL-TITANUS-EPSYNPAO-220-copy.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/TITANUS-EP-SYNPAO_EN_vJa21.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/titanus-ep-synpao/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "TITANUS EP",
+    "viscosity": "",
+    "standards": [],
+    "search_keys": [],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/20LT_-INDUSTRIAL-TITANUS-EP-68-copy.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/TITANUS-EP_EN_vJa21.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/titanus-ep/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "SUPER LIFT",
+    "viscosity": "",
+    "standards": [],
+    "search_keys": [],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/20LT_INDUSTRIAL-SUPER-LIFT-46-copy.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/SUPER-LIFT_EN_vJa21.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/super-lift/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "STEELCUT",
+    "viscosity": "",
+    "standards": [],
+    "search_keys": [],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/20LT_INDUSTRIAL-STEELCUT-copy.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/STEELCUT_EN_vJa21.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/steelcut/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "ROCK DRILL",
+    "viscosity": "",
+    "standards": [],
+    "search_keys": [],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/20LT_INDUSTRIAL-ROCK-DRILL-46-copy.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/ROCK-DRILL_EN_vJa21.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/rock-drill/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "METALFLUID",
+    "viscosity": "",
+    "standards": [],
+    "search_keys": [],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/208-L-2.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/METALFLUID_EN_vJa21.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/metalfluid/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "MATRIX",
+    "viscosity": "",
+    "standards": [],
+    "search_keys": [],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/20LT_INDUSTRIAL-MATRIX-copy.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/MATRIX_EN_vJa21.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/matrix/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "LEDA",
+    "viscosity": "",
+    "standards": [],
+    "search_keys": [],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/20LT_-INDUSTRIAL-LEDA-68.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/LEDA_EN_vJa21.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/leda/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "ELECTRO",
+    "viscosity": "",
+    "standards": [],
+    "search_keys": [],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/20LT_INDUSTRIAL-ELECTRO-copy.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/ELECTRO_EN_vJa21.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/electro/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "COMET SYNPOE",
+    "viscosity": "",
+    "standards": [],
+    "search_keys": [],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/20LT_INDUSTRIAL-COMET-SYNPOE-68-copy.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/COMET-SYNPOE_EN_vJa21.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/comet-synpoe/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "COMET SYNALB",
+    "viscosity": "",
+    "standards": [],
+    "search_keys": [],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/20LT_INDUSTRIAL-COMET-SYNALB-68-copy.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/COMET-SYNALB_EN_vJa21.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/comet-synalb/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "COMET",
+    "viscosity": "",
+    "standards": [],
+    "search_keys": [],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/20LT_INDUSTRIAL-COMET-46-copy.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/COMET_EN_vJa21.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/comet/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "AXEL",
+    "viscosity": "",
+    "standards": [],
+    "search_keys": [],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/20LT_INDUSTRIAL-AXEL-68-copy.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/AXEL_EN_vJa21.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/axel/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "ALUCUT",
+    "viscosity": "",
+    "standards": [],
+    "search_keys": [],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/20LT_INDUSTRIAL-ALUCUT-copy.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/ALUCUT_EN_vJa21.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/alucut/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "HYDROPREMIUM",
+    "viscosity": "",
+    "standards": [],
+    "search_keys": [],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/20LT_-INDUSTRIAL-HYDROPREMIUM-32-copy-1.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/HYDROPREMIUM_EN_vJa21.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/hydropremium/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "HYDRAULIC ZF",
+    "viscosity": "",
+    "standards": [],
+    "search_keys": [],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/20LT_-INDUSTRIAL-HYDRAULIC-ZF-32-copy-1.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/HYDRAULIC-ZF_EN_vJa21.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/hydraulic-zf/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "HYDRAULIC SP",
+    "viscosity": "",
+    "standards": [],
+    "search_keys": [],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/20LT_-INDUSTRIAL-HYDRAULIC-SP-32-copy-1.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/HYDRAULIC-SP_EN_vJa21.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/hydraulic-sp/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "HTO THERMO",
+    "viscosity": "",
+    "standards": [],
+    "search_keys": [],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/20LT_-INDUSTRIAL-HTO-THERMO-copy-1.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/HTO-THERMO_EN_vJa21.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/hto-thermo/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "HERCULES LPG 150",
+    "viscosity": "",
+    "standards": [],
+    "search_keys": [],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/20LT_-INDUSTRIAL-HERCULES-LPG-150-copy-1.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/HERCULES-LPG_EN_vJa21.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/hercules-lpg-150/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "HERCULES SYNPOE",
+    "viscosity": "",
+    "standards": [],
+    "search_keys": [],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/20LT_-INDUSTRIAL-HERCULES-SYNPOE-100-copy-2.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/HERCULES-SYNPOE_EN_vJa21.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/hercules-synpoe-100/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "HERCULES SYNPAO",
+    "viscosity": "",
+    "standards": [],
+    "search_keys": [],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/20LT_-INDUSTRIAL-HERCULES-SYNPAO-46-copy.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/HERCULES-SYNPAO_EN_vJa21.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/hercules-synpao/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "HERCULES",
+    "viscosity": "",
+    "standards": [],
+    "search_keys": [],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/20LT_-INDUSTRIAL-HERCULES-32-copy-1.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/HERCULES_EN_vJa21.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/hercules/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "CYBIO-GEAR",
+    "viscosity": "",
+    "standards": [],
+    "search_keys": [],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/20LT_-INDUSTRIAL-CYBIO-GEAR-220-copy.png",
+    "tds": "",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/cybio-gear/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "HYDRAULIC",
+    "viscosity": "",
+    "standards": [],
+    "search_keys": [],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/20LT_-INDUSTRIAL-HYDRAULIC-22.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/HYDRAULIC_EN_vJa21.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/hydraulic/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "SILVER",
+    "viscosity": "",
+    "standards": [],
+    "search_keys": [],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/1L_INDUSTRIAL-SILVER-10W-copy.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/SILVER_EN_vJa21.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/silver/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "PREMIUM",
+    "viscosity": "",
+    "standards": [],
+    "search_keys": [],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/20LT_-INDUSTRIAL-PREMIUM-30-copy.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/PREMIUM_EN_vJa21.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/premium/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "AUS 40",
+    "viscosity": "",
+    "standards": [],
+    "search_keys": [],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/208-L-2.png",
+    "tds": "",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/aus-40/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "D SUPER Monograde",
+    "viscosity": "",
+    "standards": [],
+    "search_keys": [],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/208-L-2.png",
+    "tds": "",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/d-super-monograde/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "TURBINE",
+    "viscosity": "",
+    "standards": [],
+    "search_keys": [],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/20LT_-INDUSTRIAL-TURBINE-32-copy.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/TURBINE_EN_vJa21.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/turbine-2/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "HYDROPREMIUM",
+    "viscosity": "",
+    "standards": [],
+    "search_keys": [],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/20LT_-INDUSTRIAL-HYDROPREMIUM-32-copy-1.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/HYDROPREMIUM_EN_vJa21.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/hydropremium-2/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "HYDRAULIC ZF",
+    "viscosity": "",
+    "standards": [],
+    "search_keys": [],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/20LT_-INDUSTRIAL-HYDRAULIC-ZF-32-copy-1.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/HYDRAULIC-ZF_EN_vJa21.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/hydraulic-zf-2/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "HYDRAULIC SP",
+    "viscosity": "",
+    "standards": [],
+    "search_keys": [],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/20LT_-INDUSTRIAL-HYDRAULIC-SP-32-copy-1.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/HYDRAULIC-SP_EN_vJa21.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/hydraulic-sp-2/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "HYDRAULIC",
+    "viscosity": "",
+    "standards": [],
+    "search_keys": [],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/20LT_-INDUSTRIAL-HYDRAULIC-22.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/HYDRAULIC_EN_vJa21.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/hydraulic-2/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "HERCULES SYNPOE",
+    "viscosity": "",
+    "standards": [],
+    "search_keys": [],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/20LT_-INDUSTRIAL-HERCULES-SYNPOE-100-copy-2.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/HERCULES-SYNPOE_EN_vJa21.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/hercules-synpoe/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "HERCULES SYNPAO",
+    "viscosity": "",
+    "standards": [],
+    "search_keys": [],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/20LT_-INDUSTRIAL-HERCULES-SYNPAO-46-copy.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/HERCULES-SYNPAO_EN_vJa21.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/hercules-synpao-2/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "HERCULES LPG",
+    "viscosity": "",
+    "standards": [],
+    "search_keys": [],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/20LT_-INDUSTRIAL-HERCULES-LPG-150-copy-1.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/HERCULES-LPG_EN_vJa21.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/hercules-lpg/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "HERCULES",
+    "viscosity": "",
+    "standards": [],
+    "search_keys": [],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/20LT_-INDUSTRIAL-HERCULES-32-copy-1.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/HERCULES_EN_vJa21.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/hercules-2/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "CYBIO-GEAR",
+    "viscosity": "",
+    "standards": [],
+    "search_keys": [],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/20LT_-INDUSTRIAL-CYBIO-GEAR-220-copy.png",
+    "tds": "",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/cybio-gear-2/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "COMET SYNPOE",
+    "viscosity": "",
+    "standards": [],
+    "search_keys": [],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/20LT_INDUSTRIAL-COMET-SYNPOE-68-copy.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/COMET-SYNPOE_EN_vJa21.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/comet-synpoe-2/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "COMET SYNALB",
+    "viscosity": "",
+    "standards": [],
+    "search_keys": [],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/20LT_INDUSTRIAL-COMET-SYNALB-68-copy.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/COMET-SYNALB_EN_vJa21.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/comet-synalb-2/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "COMET",
+    "viscosity": "",
+    "standards": [],
+    "search_keys": [],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/20LT_INDUSTRIAL-COMET-46-copy-1.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/COMET_EN_vJa21.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/comet-2/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "POSEIDON TN",
+    "viscosity": "",
+    "standards": [
+      "API CF"
+    ],
+    "search_keys": [
+      "APICF"
+    ],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/208-L-2.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/POSEIDON-SXTN_EN-vMh18.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/poseidon-tn/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "POSEIDON SX",
+    "viscosity": "",
+    "standards": [
+      "API CF"
+    ],
+    "search_keys": [
+      "APICF"
+    ],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/208-L-2.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/POSEIDON-SXTN_EN-vJN20.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/poseidon-sx/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "POSEIDON DT",
+    "viscosity": "",
+    "standards": [
+      "API CF"
+    ],
+    "search_keys": [
+      "APICF"
+    ],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/208-L-2.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/POSEIDON-DT_EN-vMh18.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/poseidon-dt/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "CYBIO-STETUB",
+    "viscosity": "",
+    "standards": [],
+    "search_keys": [],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/208-L-2.png",
+    "tds": "",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/cybio-stetub/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "POSEIDON HT",
+    "viscosity": "",
+    "standards": [
+      "API CF"
+    ],
+    "search_keys": [
+      "APICF"
+    ],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/208-L-2.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/POSEIDON-HT_EN-vF22.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/poseidon-ht-30/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "ARMOR MEDIUM",
+    "viscosity": "",
+    "standards": [],
+    "search_keys": [],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/208-L-2.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/ARMOR-MEDIUM_EN-vMh18.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/armor-medium/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "NAUTILUS VLS/25",
+    "viscosity": "",
+    "standards": [],
+    "search_keys": [],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/208-L-2.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/NAUTILUS-VLS-25_EN-vMh18.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/nautilus-vls-25/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "NAUTILUS HEAVY",
+    "viscosity": "",
+    "standards": [],
+    "search_keys": [],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/208-L-2.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/NAUTILUS-HEAVY_EN-vMh18.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/nautilus-heavy/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "NAUTILUS HEAVY XT",
+    "viscosity": "",
+    "standards": [],
+    "search_keys": [],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/208-L-2.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/NAUTILUS-HEAVY-XT-140_EN-vSp24.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/nautilus-heavy-xt/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "NAUTILUS LS",
+    "viscosity": "",
+    "standards": [],
+    "search_keys": [],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/208-L-2.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/NAUTILUS-LS_EN-vMh18.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/nautilus-ls/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "PREMUS™ MLB",
+    "viscosity": "",
+    "standards": [],
+    "search_keys": [],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/premus_mlb.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/CYC-PREMUS-MLB_EN_vAI23.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/premus-mlb/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "PREMUS™ COT",
+    "viscosity": "",
+    "standards": [],
+    "search_keys": [],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/premus_cot.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/CYC-PREMUS-COT-00_EN_vAI23.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/premus-cot/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "PREMUS™ LI-CA",
+    "viscosity": "",
+    "standards": [],
+    "search_keys": [],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/premus_li-ca.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/CYC-PREMUS-LI-CA_EN_vAI23.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/premus-li-ca/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "PREMUS™ LI",
+    "viscosity": "",
+    "standards": [],
+    "search_keys": [],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/premus_li.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/CYC-PREMUS-LI_EN_vAI23.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/premus-li/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "PREMUS™ LEP",
+    "viscosity": "",
+    "standards": [],
+    "search_keys": [],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/premus_lep.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/CYC-PREMUS-LEP_EN_vAI23.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/premus-lep/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "PREMUS™ CY-WR/OG",
+    "viscosity": "",
+    "standards": [],
+    "search_keys": [],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/premus_cy-wr_og.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/CYC-PREMUS-CY-WR-OG-2_EN_vAI23.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/premus-cy-wr-og/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "PREMUS™ GRF",
+    "viscosity": "",
+    "standards": [],
+    "search_keys": [],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/premus_grf.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/CYC-PREMUS-GRF_EN_vAI23.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/premus-grf/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "PREMUS™ CA",
+    "viscosity": "",
+    "standards": [],
+    "search_keys": [],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/premus_ca.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/CYC-PREMUS-CA_EN_vAI23.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/premus-ca/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "PREMUS™ BNT",
+    "viscosity": "",
+    "standards": [],
+    "search_keys": [],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/premus_bnt.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/CYC-PREMUS-BNT-2_EN_vAI23.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/premus-bnt/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "INNOVA™ COMPLEX/WTR 1,5",
+    "viscosity": "",
+    "standards": [],
+    "search_keys": [],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/newinnovacomplexwtr15.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/CYC-INNOVA-COMPLEX-WTR-1.5_EN_vAI23.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/innova-complex-wtr-15/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "PREMUS™ AUTO",
+    "viscosity": "",
+    "standards": [],
+    "search_keys": [],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/06/premus_auto.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/CYC-PREMUS-AUTO-00_EN_vAI23.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/premus-auto/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "INNOVA™ SYNCOMPLEX/TF",
+    "viscosity": "",
+    "standards": [],
+    "search_keys": [],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/innova_syncomplex_tf.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/CYC-INNOVA-SYNCOMPLEX-TF-2_EN_vAI23.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/innova-syncomplex-tf/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "INNOVA™ SYNCOMPLEX/FG-LT",
+    "viscosity": "",
+    "standards": [],
+    "search_keys": [],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/innova_syncomplex_fg-lt.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/CYC-INNOVA-SYNCOMPLEX-FG-LT-1_EN_vAI23.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/innova-syncomplex-fg-lt/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "INNOVA™ SYNCOMPLEX/FG-HT",
+    "viscosity": "",
+    "standards": [],
+    "search_keys": [],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/innova_syncomplex_fg-ht-1.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/CYC-INNOVA-SYNCOMPLEX-FG-HT-2_EN_vAI23.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/innova-syncomplex-fg-ht/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "INNOVA™ SYN/LT",
+    "viscosity": "",
+    "standards": [],
+    "search_keys": [],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/innova_syn_lt-1.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/CYC-INNOVA-SYN-LT-1_EN_vAI23.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/innova-syn-lt/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "INNOVA™ CY/BIO",
+    "viscosity": "",
+    "standards": [],
+    "search_keys": [],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/innova_cybio-1.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/CYC-INNOVA-CY-BIO-2_EN_vAI23.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/innova-cy-bio/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "INNOVA™ COMPLEX/WTR 2",
+    "viscosity": "",
+    "standards": [],
+    "search_keys": [],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/innova_complex_wtr-1.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/CYC-INNOVA-COMPLEX-WTR-2_EN_AI23.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/innova-complex-wtr/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "INNOVA™ COMPLEX/MLB",
+    "viscosity": "",
+    "standards": [],
+    "search_keys": [],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/innova_complex_mlb-1.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/CYC-INNOVA-COMPLEX-MLB_EN_vAI23.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/innova-complex-mlb/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "INNOVA™ COMPLEX",
+    "viscosity": "",
+    "standards": [],
+    "search_keys": [],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/innova-complex.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/CYC-INNOVA-COMPLEX_EN_vAI23.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/innova-complex/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "INNOVA™ COMPLEX/FG-GL",
+    "viscosity": "",
+    "standards": [],
+    "search_keys": [],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/innova_complex_fg-gl.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/CYC-INNOVA-SYNCOMPLEX-FG-GL-2_EN_vAI23-1.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/innova-complex-fg-gl/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "L.H.M. FLUID",
+    "viscosity": "",
+    "standards": [],
+    "search_keys": [],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/1L_-L.H.M.-Fluid-–-2.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/LHM-FLUID_EN_vJa21.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/l-h-m-fluid/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "CLEAN GLASS (WINTER)",
+    "viscosity": "",
+    "standards": [],
+    "search_keys": [],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/CLEAN-GLASS-b.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/CLEANGLASS-WINTER_EN_vJa21.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/clean-glass-winter/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "BATTERY FLUID",
+    "viscosity": "",
+    "standards": [],
+    "search_keys": [],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/BATTERY-FLUID-CYCLON-b.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/BATTERY-FLUID_EN_vJa21.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/battery-fluid/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "CLEAN GLASS (SUMMER)",
+    "viscosity": "",
+    "standards": [],
+    "search_keys": [],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/GLASS-SUMMER.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/CLEANGLASS-SUMMER_EN_vJa21.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/clean-glass-summer/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "BRAKE FLUID 4",
+    "viscosity": "",
+    "standards": [],
+    "search_keys": [],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/BRAKE-FLUID.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/BRAKE-FLUID_EN_vJa21.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/brake-fluid-4/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "AdBlue®",
+    "viscosity": "",
+    "standards": [],
+    "search_keys": [],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/Cyclon-Adblue-1000LT-1.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/AdBlue®_EN-vAg24.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/adblue/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "RADIATOR LL G13",
+    "viscosity": "",
+    "standards": [],
+    "search_keys": [],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/1LT_RADATOR-LL-G13.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/SPECIAL-RADIATOR-G13_EN_vJa21.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/radiator-ll-g13/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "RADIATOR LL (G12+)",
+    "viscosity": "",
+    "standards": [
+      "MB 325.3",
+      "Ford WSS-M97-B44D",
+      "WSS-M97-B44D"
+    ],
+    "search_keys": [
+      "MB3253",
+      "FORDWSSM97B44D",
+      "WSSM97B44D"
+    ],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/1LT_RADATOR-LL-G12.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/SPECIAL-RADIATOR-LONGLIFE-G12_EN_vJa21.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/radiator-ll-g12/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "RADIATOR",
+    "viscosity": "",
+    "standards": [
+      "MB 325.0"
+    ],
+    "search_keys": [
+      "MB3250"
+    ],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/1LT_RADATOR.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/SPECIAL-RADIATOR_EN_vJa21.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/radiator/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "CYCLONFLU",
+    "viscosity": "",
+    "standards": [
+      "MB 325.0",
+      "MB 326.0"
+    ],
+    "search_keys": [
+      "MB3250",
+      "MB3260"
+    ],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/1LT_CYCLONFLU.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/SPECIAL-CYCLONFLU_EN_vJa21.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/cyclonflu/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "CYCLONFLU PLUS",
+    "viscosity": "",
+    "standards": [
+      "MB 325.0",
+      "MB 326.0"
+    ],
+    "search_keys": [
+      "MB3250",
+      "MB3260"
+    ],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/1LT_CYCLONFLU-PLUS.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/SPECIAL-CYCLONFLU_EN_vJa21-1.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/cyclonflu-plus/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "CYCLONFLU LL G13",
+    "viscosity": "",
+    "standards": [],
+    "search_keys": [],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/1LT_CYCLONFLU-LL-G13.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/SPECIAL-CYCLONFLU-G13_EN_vJa21.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/cyclonflu-ll-g13/"
+  },
+  {
+    "brand": "CYCLON",
+    "name": "CYCLONFLU LL (G12+)",
+    "viscosity": "",
+    "standards": [
+      "MB 325.3",
+      "MB 326.3",
+      "Ford WSS-M97-B44D",
+      "WSS-M97-B44D"
+    ],
+    "search_keys": [
+      "MB3253",
+      "MB3263",
+      "FORDWSSM97B44D",
+      "WSSM97B44D"
+    ],
+    "legacy_code": "",
+    "parent_code": "",
+    "packaging": [],
+    "sku_rows": [],
+    "sku_size": "",
+    "image": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/1LT_CYCLONFLU-LL-G12.png",
+    "tds": "https://www.cyclon-lpc.com/wp-content/uploads/2022/07/CYCLONFLU-LONGLIFE-G12_EN_vJa21.pdf",
+    "url": "https://www.cyclon-lpc.com/cyclon_product/cyclonflu-ll-g12/"
+  }
+]
