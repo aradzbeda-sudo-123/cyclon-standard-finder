@@ -1,0 +1,6 @@
+CYCLON current Passenger Cars & Light Duty catalogue
+Verified catalogue size: 47 products
+Ranges: EVO / PRO / ECO / MAX
+The 47 current product-page URLs are embedded in cyclon_engine.py.
+Catalogue is built once per Streamlit process and then kept in memory for fast searches.
+Product image is selected from each official CYCLON product page.

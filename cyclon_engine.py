@@ -44,20 +44,57 @@ def _get(url, timeout=25):
     return r
 
 def _product_links():
-    links = []
-    seen = set()
-    for page in range(1, 7):
-        url = CATEGORY if page == 1 else f"{CATEGORY}page/{page}/"
-        soup = BeautifulSoup(_get(url).text, "html.parser")
-        for a in soup.find_all("a", href=True):
-            href = urljoin(BASE, a["href"])
-            if "/cyclon_new_product/" not in href:
-                continue
-            href = href.split("#", 1)[0].split("?", 1)[0]
-            if href not in seen:
-                seen.add(href)
-                links.append(href)
-    return links
+    # Fixed local index of the CURRENT 47-product CYCLON Passenger Cars & Light Duty catalogue.
+    # This avoids crawling six category pages on every app start.
+    return [
+        'https://www.cyclon-lpc.com/cyclon_new_product/bw-fe/',
+        'https://www.cyclon-lpc.com/cyclon_new_product/dxs-c3/',
+        'https://www.cyclon-lpc.com/cyclon_new_product/fd-fe/',
+        'https://www.cyclon-lpc.com/cyclon_new_product/j-fe/',
+        'https://www.cyclon-lpc.com/cyclon_new_product/m-fe/',
+        'https://www.cyclon-lpc.com/cyclon_new_product/psa-c2/',
+        'https://www.cyclon-lpc.com/cyclon_new_product/psa-ll/',
+        'https://www.cyclon-lpc.com/cyclon_new_product/racing/',
+        'https://www.cyclon-lpc.com/cyclon_new_product/rnl-c4/',
+        'https://www.cyclon-lpc.com/cyclon_new_product/rnl-fe/',
+        'https://www.cyclon-lpc.com/cyclon_new_product/stl-ll/',
+        'https://www.cyclon-lpc.com/cyclon_new_product/t-fe/',
+        'https://www.cyclon-lpc.com/cyclon_new_product/tdi-c3/',
+        'https://www.cyclon-lpc.com/cyclon_new_product/ultra/',
+        'https://www.cyclon-lpc.com/cyclon_new_product/ultra-2/',
+        'https://www.cyclon-lpc.com/cyclon_new_product/ultra-3/',
+        'https://www.cyclon-lpc.com/cyclon_new_product/ultra-s-2/',
+        'https://www.cyclon-lpc.com/cyclon_new_product/ultra-s-3/',
+        'https://www.cyclon-lpc.com/cyclon_new_product/ultra-s/',
+        'https://www.cyclon-lpc.com/cyclon_new_product/v-fe/',
+        'https://www.cyclon-lpc.com/cyclon_new_product/v1-ll/',
+        'https://www.cyclon-lpc.com/cyclon_new_product/v1-ll-2/',
+        'https://www.cyclon-lpc.com/cyclon_new_product/dxs-c3-2/',
+        'https://www.cyclon-lpc.com/cyclon_new_product/fd-a5-b5/',
+        'https://www.cyclon-lpc.com/cyclon_new_product/psa-c2-2/',
+        'https://www.cyclon-lpc.com/cyclon_new_product/tdi-c3-2/',
+        'https://www.cyclon-lpc.com/cyclon_new_product/v1-ll-3/',
+        'https://www.cyclon-lpc.com/cyclon_new_product/v1-ll-4/',
+        'https://www.cyclon-lpc.com/cyclon_new_product/r2-dxs/',
+        'https://www.cyclon-lpc.com/cyclon_new_product/r2-ultra/',
+        'https://www.cyclon-lpc.com/cyclon_new_product/r2-ultra-s/',
+        'https://www.cyclon-lpc.com/cyclon_new_product/r2-v1/',
+        'https://www.cyclon-lpc.com/cyclon_new_product/r2-x-100/',
+        'https://www.cyclon-lpc.com/cyclon_new_product/prm/',
+        'https://www.cyclon-lpc.com/cyclon_new_product/prm-2/',
+        'https://www.cyclon-lpc.com/cyclon_new_product/spr-a3-b4/',
+        'https://www.cyclon-lpc.com/cyclon_new_product/spr-a3-b4-2/',
+        'https://www.cyclon-lpc.com/cyclon_new_product/spr-a3-b4-3/',
+        'https://www.cyclon-lpc.com/cyclon_new_product/x-100/',
+        'https://www.cyclon-lpc.com/cyclon_new_product/x-100-2/',
+        'https://www.cyclon-lpc.com/cyclon_new_product/x-100-3/',
+        'https://www.cyclon-lpc.com/cyclon_new_product/x-100-4/',
+        'https://www.cyclon-lpc.com/cyclon_new_product/x-200/',
+        'https://www.cyclon-lpc.com/cyclon_new_product/x-200-2/',
+        'https://www.cyclon-lpc.com/cyclon_new_product/x-200-3/',
+        'https://www.cyclon-lpc.com/cyclon_new_product/x-300/',
+        'https://www.cyclon-lpc.com/cyclon_new_product/x-300-2/'
+    ]
 
 def _section_text(soup, heading):
     target = None
@@ -87,22 +124,25 @@ def _section_text(soup, heading):
 
 def _best_image(soup):
     candidates = []
+    bad = ("logo", "icon", "engineered-to-perform", "footer", "header", "banner", "matching")
     for img in soup.find_all("img"):
         src = img.get("data-src") or img.get("data-lazy-src") or img.get("src") or ""
         if not src:
             continue
         src = urljoin(BASE, src)
-        alt = (img.get("alt") or "").lower()
-        score = 0
         low = src.lower()
-        if "logo" in low or "icon" in low:
+        alt = (img.get("alt") or "").strip().lower()
+        if any(x in low for x in bad):
             continue
+        score = 0
         if "wp-content/uploads" in low:
-            score += 2
-        if any(k in alt for k in ("cyclon", "evo", "pro", "eco", "max")):
+            score += 5
+        if alt and alt not in ("image", "cyclon"):
+            score += 5
+        if any(k in alt for k in ("evo", "pro", "eco", "max", "bw", "dxs", "ultra", "v1", "x-")):
+            score += 8
+        if low.endswith((".png", ".webp", ".jpg", ".jpeg")):
             score += 3
-        if any(k in low for k in ("evo", "pro", "eco", "max", "product")):
-            score += 2
         candidates.append((score, src))
     return max(candidates, default=(0, ""))[1]
 
