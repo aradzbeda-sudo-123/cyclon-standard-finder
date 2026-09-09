@@ -122,28 +122,51 @@ def _section_text(soup, heading):
             result.append(x)
     return " | ".join(result)
 
-def _best_image(soup):
+def _best_image(soup, product_name=""):
+    """
+    Return only an image that looks like the actual product packshot.
+    If we cannot identify a product image confidently, return blank rather
+    than showing a car/banner/site graphic.
+    """
+    name_tokens = {
+        x.lower() for x in re.findall(r"[A-Za-z0-9]+", product_name or "")
+        if len(x) >= 2 and x.lower() not in {"cyclon", "motor", "oil"}
+    }
     candidates = []
-    bad = ("logo", "icon", "engineered-to-perform", "footer", "header", "banner", "matching")
+    banned = (
+        "engineered", "banner", "slider", "hero", "matching", "discover",
+        "vehicle", "car-", "automotive", "footer", "header", "logo", "icon",
+        "shine", "social", "certificate", "iso-", "tribon"
+    )
     for img in soup.find_all("img"):
         src = img.get("data-src") or img.get("data-lazy-src") or img.get("src") or ""
+        alt = (img.get("alt") or "").strip()
         if not src:
             continue
         src = urljoin(BASE, src)
         low = src.lower()
-        alt = (img.get("alt") or "").strip().lower()
-        if any(x in low for x in bad):
+        alt_low = alt.lower()
+        if any(x in low or x in alt_low for x in banned):
             continue
-        score = 0
-        if "wp-content/uploads" in low:
-            score += 5
-        if alt and alt not in ("image", "cyclon"):
-            score += 5
-        if any(k in alt for k in ("evo", "pro", "eco", "max", "bw", "dxs", "ultra", "v1", "x-")):
+        if "wp-content/uploads" not in low:
+            continue
+
+        alt_tokens = set(re.findall(r"[a-z0-9]+", alt_low))
+        overlap = len(name_tokens & alt_tokens)
+        filename = low.rsplit("/", 1)[-1]
+        filename_tokens = set(re.findall(r"[a-z0-9]+", filename))
+        file_overlap = len(name_tokens & filename_tokens)
+
+        # A real CYCLON product packshot normally carries the product name/code
+        # in its ALT text or filename. Require that evidence.
+        score = overlap * 20 + file_overlap * 10
+        if any(x in filename for x in ("1lt", "4lt", "5lt", "20lt", "208", "pack", "bottle")):
             score += 8
-        if low.endswith((".png", ".webp", ".jpg", ".jpeg")):
+        if low.endswith((".png", ".webp")):
             score += 3
-        candidates.append((score, src))
+        if score > 0:
+            candidates.append((score, src))
+
     return max(candidates, default=(0, ""))[1]
 
 def _pdf_link(soup):
@@ -246,7 +269,7 @@ def _parse_product(url, old_by_parent):
         "packaging": packaging,
         "sku_rows": old.get("sku_rows", []) if old else [],
         "sku_size": " | ".join(sku_parts),
-        "image": _best_image(soup),
+        "image": _best_image(soup, name),
         "tds": _pdf_link(soup),
         "url": url,
         "_page_text": full,
@@ -270,17 +293,35 @@ def _live_catalog():
 
 def load_cyclon_products():
     """
-    Load CYCLON's CURRENT Passenger Cars & Light Duty catalogue.
-    If the CYCLON site is temporarily unavailable, fall back to the bundled
-    catalogue so the app still works.
+    COMPLETE CYCLON dataset used by this app:
+      1) bundled legacy CYCLON catalogue (keeps MAGMA and all prior products);
+      2) current 47-product Passenger Cars & Light Duty catalogue
+         (EVO / PRO / ECO / MAX).
+
+    The current pages are read only once per Streamlit process because the
+    app caches this function's result. Repeated searches are local/fast.
     """
+    legacy = _old_catalog()
     try:
         current = _live_catalog()
-        if len(current) >= 40:
-            return current
     except Exception:
-        pass
-    return _old_catalog()
+        current = []
+
+    # Never throw MAGMA away. Start with every bundled legacy record.
+    combined = list(legacy)
+
+    # Add every current product. Do not replace MAGMA: new and legacy product
+    # families intentionally coexist in the search catalogue.
+    seen_urls = {str(x.get("url", "")).rstrip("/").lower() for x in combined}
+    for item in current:
+        u = str(item.get("url", "")).rstrip("/").lower()
+        if u and u in seen_urls:
+            continue
+        combined.append(item)
+        if u:
+            seen_urls.add(u)
+
+    return combined
 
 def search_cyclon(products, standard):
     qv = _variants(standard)

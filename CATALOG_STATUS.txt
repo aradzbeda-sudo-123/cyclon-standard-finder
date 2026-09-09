@@ -1,6 +1,14 @@
-CYCLON current Passenger Cars & Light Duty catalogue
-Verified catalogue size: 47 products
-Ranges: EVO / PRO / ECO / MAX
-The 47 current product-page URLs are embedded in cyclon_engine.py.
-Catalogue is built once per Streamlit process and then kept in memory for fast searches.
-Product image is selected from each official CYCLON product page.
+CYCLON COMPLETE PASSENGER / LIGHT-DUTY ENGINE-OIL SEARCH
+========================================================
+INCLUDED TOGETHER:
+1. COMPLETE bundled legacy MAGMA passenger-car catalogue.
+2. COMPLETE current 47-product Passenger Cars & Light Duty catalogue:
+   EVO + PRO + ECO + MAX.
+
+IMPORTANT:
+- MAGMA is intentionally NOT replaced by the new series.
+- Both legacy MAGMA and current series participate in the same standard search.
+- Current product-page index contains exactly 47 unique official CYCLON pages.
+- Product-image logic rejects cars, banners, hero graphics, logos and generic site artwork.
+- If a current product packshot cannot be identified confidently, no image is shown rather than a wrong image.
+- Existing FERROMAT filtering and UI are retained.
