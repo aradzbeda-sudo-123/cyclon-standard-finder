@@ -131,11 +131,13 @@ def cyclon_asset(url):
 # HEADER
 # ============================================================
 
-CYCLON_LOGO_URL = "https://www.cyclon-lpc.com/wp-content/uploads/2022/04/Group-16404.svg"
-_logo_src = cyclon_asset(CYCLON_LOGO_URL) or CYCLON_LOGO_URL
+import base64
+
+_logo_file = Path(__file__).with_name("cyclon_logo.png")
+_logo_b64 = base64.b64encode(_logo_file.read_bytes()).decode("ascii")
 st.markdown(
-    '<img src="' + html.escape(_logo_src, quote=True) + '" alt="CYCLON" '
-    'style="width:150px; height:auto; margin-bottom:14px;">',
+    '<img src="data:image/png;base64,' + _logo_b64 + '" alt="CYCLON" '
+    'style="width:230px; height:auto; margin-bottom:14px;">',
     unsafe_allow_html=True,
 )
 
