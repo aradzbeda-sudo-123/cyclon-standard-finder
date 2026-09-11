@@ -1,7 +1,0 @@
-FINAL CYCLON DATASET
-All-brands CYCLON records: 283
-Legacy MAGMA records added: 40
-Total records: 323
-Records with image URL: 323/323
-MAGMA records in final catalogue: 40
-Search logic: same as all-brands app.
