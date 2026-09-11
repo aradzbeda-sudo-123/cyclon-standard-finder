@@ -185,8 +185,23 @@ def resolve_verified_cyclon_product_image(product_page_url, product_name, curren
     If a matching product image cannot be verified, return blank rather than
     displaying a misleading truck/car/category image.
     """
-    if current_image and not _looks_generic_cyclon_image(current_image):
-        return current_image
+    # Never trust the catalog image blindly. Some CYCLON pages expose
+    # vehicle/category artwork with non-obvious filenames.
+    # First verify that the current image filename actually resembles
+    # the product name. Otherwise resolve it from the official product page.
+    if current_image:
+        file_name = current_image.split("?", 1)[0].rstrip("/").rsplit("/", 1)[-1]
+        file_words = set(_img_words(file_name))
+        product_words = set(_img_words(product_name))
+
+        # Keep the existing image only when it has a meaningful product-name match
+        # and is not one of the known generic/category images.
+        if (
+            not _looks_generic_cyclon_image(current_image)
+            and product_words
+            and len(product_words & file_words) >= 2
+        ):
+            return current_image
 
     if not product_page_url:
         return ""
@@ -230,8 +245,15 @@ def resolve_verified_cyclon_product_image(product_page_url, product_name, curren
                 best_score = score
                 best_url = urljoin(product_page_url, src)
 
-        if best_url and best_score >= 2:
-            return best_url
+        if best_url:
+            best_name = best_url.split("?", 1)[0].rstrip("/").rsplit("/", 1)[-1]
+            best_file_words = set(_img_words(best_name))
+            long_product_words = {w for w in product_words if len(w) >= 4}
+
+            strong_long_match = bool(long_product_words & best_file_words)
+
+            if best_score >= 2 or strong_long_match:
+                return best_url
 
     except Exception:
         pass
