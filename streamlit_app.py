@@ -5,7 +5,8 @@ import html
 import base64
 import requests
 from pathlib import Path
-from urllib.parse import quote_plus
+from urllib.parse import quote_plus, urljoin
+from html.parser import HTMLParser
 
 from cyclon_engine import load_cyclon_products, search_cyclon
 
@@ -125,6 +126,117 @@ def cyclon_asset(url):
         return f"data:{content_type};base64,{encoded}"
     except Exception:
         return ""
+
+
+
+# ============================================================
+# VERIFIED CYCLON PRODUCT IMAGE RESOLVER
+# ============================================================
+
+_GENERIC_CYCLON_IMAGE_FILES = {
+    "transmission.png",
+    "trucks.png",
+    "agri.png",
+    "mega-menu-product-range-img.png",
+    "208-L-2.png",
+}
+
+class _CyclonImgParser(HTMLParser):
+    def __init__(self):
+        super().__init__()
+        self.images = []
+
+    def handle_starttag(self, tag, attrs):
+        if tag.lower() != "img":
+            return
+        a = dict(attrs)
+        src = (
+            a.get("src")
+            or a.get("data-src")
+            or a.get("data-lazy-src")
+            or a.get("data-original")
+            or ""
+        )
+        alt = a.get("alt") or ""
+        if src:
+            self.images.append((alt, src))
+
+
+def _img_words(text):
+    text = html.unescape(clean_text(text)).upper()
+    text = re.sub(r"<[^>]+>", " ", text)
+    text = re.sub(r"[^A-Z0-9]+", " ", text)
+    stop = {"CYCLON", "ECO", "EVO", "PRO", "MAX"}
+    return [w for w in text.split() if w and w not in stop]
+
+
+def _looks_generic_cyclon_image(url):
+    if not url:
+        return True
+    name = url.split("?", 1)[0].rstrip("/").rsplit("/", 1)[-1].lower()
+    return name in {x.lower() for x in _GENERIC_CYCLON_IMAGE_FILES}
+
+
+@st.cache_data(ttl=86400, show_spinner=False)
+def resolve_verified_cyclon_product_image(product_page_url, product_name, current_image):
+    """
+    If the catalog contains a category/vehicle placeholder instead of the
+    actual item, resolve the image from the official CYCLON product page.
+    If a matching product image cannot be verified, return blank rather than
+    displaying a misleading truck/car/category image.
+    """
+    if current_image and not _looks_generic_cyclon_image(current_image):
+        return current_image
+
+    if not product_page_url:
+        return ""
+
+    try:
+        response = requests.get(
+            product_page_url,
+            headers={
+                "User-Agent": "Mozilla/5.0",
+                "Referer": "https://www.cyclon-lpc.com/",
+                "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+            },
+            timeout=20,
+        )
+        response.raise_for_status()
+
+        parser = _CyclonImgParser()
+        parser.feed(response.text)
+
+        product_words = set(_img_words(product_name))
+        if not product_words:
+            return ""
+
+        best_url = ""
+        best_score = 0
+
+        for alt, src in parser.images:
+            if "wp-content/uploads/" not in src:
+                continue
+
+            alt_words = set(_img_words(alt))
+            if not alt_words:
+                continue
+
+            alt_norm = " ".join(_img_words(alt))
+            if alt_norm in {"ENGINEERED TO PERFORM", "IMAGE", "IC PACKAGE"}:
+                continue
+
+            score = len(product_words & alt_words)
+            if score > best_score:
+                best_score = score
+                best_url = urljoin(product_page_url, src)
+
+        if best_url and best_score >= 2:
+            return best_url
+
+    except Exception:
+        pass
+
+    return ""
 
 
 # ============================================================
@@ -417,8 +529,17 @@ def render_results_table(df):
         parts.append("<tr>")
 
         image_url = clean_text(row.get("Image"))
-        if image_url:
-            image_src = cyclon_asset(image_url) or image_url
+        product_page_url = clean_text(row.get("Product Page"))
+        product_name = clean_text(row.get("Product"))
+
+        verified_image_url = resolve_verified_cyclon_product_image(
+            product_page_url,
+            product_name,
+            image_url,
+        )
+
+        if verified_image_url:
+            image_src = cyclon_asset(verified_image_url) or verified_image_url
             parts.append(
                 '<td><img src="'
                 + html.escape(image_src, quote=True)
