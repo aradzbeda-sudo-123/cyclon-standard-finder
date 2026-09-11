@@ -295,12 +295,12 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-st.write("Search CYCLON automotive oils by vehicle manufacturer specification or viscosity.")
+st.write("Search CYCLON automotive oils by vehicle manufacturer specification, viscosity, or SKU.")
 
-st.caption("Examples: VW509, VW504, MB22951, BMWLL04, PorscheC30, 5W30, 0W20, 10W40")
+st.caption("Examples: VW509, BMWLL04, 5W30, OPP005, JM26508")
 
 st.caption(
-    "Searches the local CYCLON catalog and automatically matches equivalent standard and viscosity formats."
+    "Searches the local CYCLON catalog by specification, viscosity, or exact SKU/article number."
 )
 
 
@@ -345,6 +345,51 @@ def search_cyclon_by_viscosity(products, viscosity):
     return matches
 
 
+
+def _sku_key(value):
+    """Normalize SKU/article number: ignore spaces, dashes and punctuation."""
+    return re.sub(r"[^A-Z0-9]+", "", clean_text(value).upper())
+
+
+def _product_sku_keys(product):
+    keys = set()
+
+    for field in ("code", "parent_code", "legacy_code"):
+        key = _sku_key(product.get(field))
+        if key:
+            keys.add(key)
+
+    for row in product.get("sku_rows") or []:
+        key = _sku_key(row.get("sku"))
+        if key:
+            keys.add(key)
+
+    # sku_size may contain several SKU + package rows separated by |.
+    sku_size = clean_text(product.get("sku_size"))
+    if sku_size:
+        for chunk in re.split(r"\s*\|\s*|\s*;\s*", sku_size):
+            # take the leading article number before size text
+            m = re.match(r"^\s*([A-Za-z0-9._/-]+)", chunk)
+            if m:
+                key = _sku_key(m.group(1))
+                if key:
+                    keys.add(key)
+
+    return keys
+
+
+def search_cyclon_by_sku(products, value):
+    query = _sku_key(value)
+    if not query:
+        return []
+
+    matches = []
+    for product in products:
+        if query in _product_sku_keys(product):
+            matches.append(product)
+    return matches
+
+
 @st.cache_resource(show_spinner=False)
 def get_cyclon_products():
     return load_cyclon_products()
@@ -356,7 +401,11 @@ def build_results(standard):
     if _is_viscosity_query(standard):
         matches = search_cyclon_by_viscosity(products, standard)
     else:
-        matches = search_cyclon(products, standard)
+        sku_matches = search_cyclon_by_sku(products, standard)
+        if sku_matches:
+            matches = sku_matches
+        else:
+            matches = search_cyclon(products, standard)
 
     rows = []
     seen = set()
@@ -519,9 +568,9 @@ def render_results_table(df):
 
 with st.form("search_form", clear_on_submit=False):
     st.text_input(
-        "Enter oil specification or viscosity",
+        "Enter specification, viscosity, or SKU",
         key="standard_input",
-        placeholder="Example: VW504 or 5W30",
+        placeholder="Example: VW504, 5W30, OPP005 or JM26508",
     )
 
     submitted = st.form_submit_button(
@@ -539,7 +588,7 @@ if submitted:
     standard = st.session_state.standard_input.strip()
 
     if not standard:
-        st.warning("Please enter an oil specification or viscosity.")
+        st.warning("Please enter a specification, viscosity, or SKU.")
     else:
         with st.spinner("Searching the CYCLON catalog..."):
             results = build_results(standard)
