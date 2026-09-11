@@ -130,10 +130,10 @@ def cyclon_asset(url):
 
 
 # ============================================================
-# STRICT CYCLON PRODUCT IMAGE RESOLVER
+# CYCLON PRIMARY PRODUCT-PACKAGE IMAGE RESOLVER
 # ============================================================
 
-class _CyclonImageParser(HTMLParser):
+class _CyclonPageImageParser(HTMLParser):
     def __init__(self):
         super().__init__()
         self.images = []
@@ -149,42 +149,69 @@ class _CyclonImageParser(HTMLParser):
             or a.get("data-original")
             or ""
         )
-        alt = a.get("alt") or ""
-        title = a.get("title") or ""
-        if src:
-            self.images.append((src, alt, title))
+        if not src:
+            return
+
+        width = clean_text(a.get("width"))
+        height = clean_text(a.get("height"))
+        self.images.append({
+            "src": src,
+            "alt": clean_text(a.get("alt")),
+            "title": clean_text(a.get("title")),
+            "class": clean_text(a.get("class")),
+            "width": width,
+            "height": height,
+        })
 
 
-def _img_tokens(text):
-    text = html.unescape(clean_text(text)).upper()
-    text = re.sub(r"<[^>]+>", " ", text)
-    text = re.sub(r"[^A-Z0-9]+", " ", text)
+def _cyclon_img_tokens(value):
+    value = html.unescape(clean_text(value)).upper()
+    value = re.sub(r"<[^>]+>", " ", value)
+    value = re.sub(r"[^A-Z0-9]+", " ", value)
     stop = {
-        "CYCLON", "LPC", "OIL", "LUBRICANT", "PRODUCT",
-        "ENGINEERED", "PERFORM", "IMAGE", "LOGO",
-        "TRUCK", "TRUCKS", "CAR", "CARS", "AGRI",
-        "AGRICULTURE", "TRANSMISSION", "AUTOMOTIVE",
+        "CYCLON", "LPC", "IMAGE", "IMG", "PRODUCT", "OIL",
+        "MOTOR", "ENGINE", "LUBRICANT", "LOGO", "ICON",
+        "PASSENGER", "CARS", "CAR", "LIGHT", "DUTY",
     }
-    return [w for w in text.split() if w and w not in stop]
+    return [x for x in value.split() if x and x not in stop]
 
 
-def _looks_like_category_or_vehicle(src, alt="", title=""):
-    text = " ".join([src, alt, title]).lower()
-    bad = [
-        "truck", "trucks", "car-", "/car", "vehicle",
-        "agri", "tractor", "transmission", "product-range",
+def _cyclon_reject_non_product_image(img):
+    text = " ".join([
+        img.get("src", ""),
+        img.get("alt", ""),
+        img.get("title", ""),
+        img.get("class", ""),
+    ]).lower()
+
+    # Explicitly reject page/category artwork and vehicle icons.
+    blocked = [
+        "logo", "icon", "passenger", "truck", "tractor", "vehicle",
         "category", "banner", "slider", "hero", "mega-menu",
-        "engineered-to-perform", "logo", "icon",
+        "technology", "network", "customer-support", "quality",
+        "engineered-to-perform", "product-range", "agri",
     ]
-    return any(word in text for word in bad)
+    if any(x in text for x in blocked):
+        return True
+
+    # Tiny declared images are almost certainly icons, not the product pack.
+    try:
+        w = int(re.sub(r"\D", "", img.get("width", "")) or "0")
+        h = int(re.sub(r"\D", "", img.get("height", "")) or "0")
+        if w and h and (w < 180 or h < 180):
+            return True
+    except Exception:
+        pass
+
+    return False
 
 
 @st.cache_data(ttl=86400, show_spinner=False)
-def strict_cyclon_product_image(product_page_url, product_name):
+def cyclon_primary_product_image(product_page_url, product_name):
     """
-    Only returns an image verified from the specific official CYCLON product page.
-    It never trusts the catalog image field, because some catalog rows contain
-    category artwork (truck/car/tractor) rather than the actual package.
+    Resolve ONLY the main package/bottle/can image from the specific official
+    CYCLON product page. Page icons (cars, trucks, tractors, categories) are
+    rejected even though they occur on the same product page.
     """
     if not product_page_url or not product_name:
         return ""
@@ -201,52 +228,54 @@ def strict_cyclon_product_image(product_page_url, product_name):
         )
         r.raise_for_status()
 
-        parser = _CyclonImageParser()
+        parser = _CyclonPageImageParser()
         parser.feed(r.text)
 
-        p_tokens = set(_img_tokens(product_name))
-        p_long = {t for t in p_tokens if len(t) >= 3}
-        if not p_long:
-            return ""
-
+        p_tokens = set(_cyclon_img_tokens(product_name))
         candidates = []
 
-        for src, alt, title in parser.images:
-            full = urljoin(product_page_url, src)
+        for pos, img in enumerate(parser.images):
+            full = urljoin(product_page_url, img["src"])
 
-            # Only official uploaded media, and never obvious vehicle/category artwork.
             if "wp-content/uploads/" not in full:
                 continue
-            if _looks_like_category_or_vehicle(full, alt, title):
+            if _cyclon_reject_non_product_image(img):
                 continue
 
-            descriptor = " ".join([src, alt, title])
-            d_tokens = set(_img_tokens(descriptor))
-            if not d_tokens:
+            descriptor = " ".join([
+                img.get("src", ""),
+                img.get("alt", ""),
+                img.get("title", ""),
+            ])
+            d_tokens = set(_cyclon_img_tokens(descriptor))
+            common = p_tokens & d_tokens
+
+            # Product image should share meaningful product-name information.
+            name_score = sum(len(x) for x in common if len(x) >= 2)
+            distinctive = any(len(x) >= 3 for x in common)
+
+            # Strongly favor images that look like package assets by filename.
+            low = full.lower()
+            package_bonus = 0
+            if any(x in low for x in ["1l", "4l", "5l", "20l", "60l", "208l", "package", "pack"]):
+                package_bonus += 5
+
+            if not distinctive and name_score < 4:
                 continue
 
-            common = p_long & d_tokens
-            if not common:
-                continue
-
-            # Strong score: meaningful matching tokens from product name.
-            score = sum(len(x) for x in common)
-
-            # Require either 2 matching tokens or one distinctive token of 4+ chars.
-            strong = len(common) >= 2 or any(len(x) >= 4 for x in common)
-            if not strong:
-                continue
-
+            # Earlier substantial matching images on CYCLON product pages are
+            # typically the main product pack; icons are rejected above.
+            score = name_score + package_bonus - (pos * 0.01)
             candidates.append((score, full))
 
         if candidates:
-            candidates.sort(reverse=True)
+            candidates.sort(key=lambda x: x[0], reverse=True)
             return candidates[0][1]
 
     except Exception:
         pass
 
-    # Safer to show nothing than a wrong vehicle/category picture.
+    # Never substitute a random image from the page.
     return ""
 
 
@@ -542,13 +571,13 @@ def render_results_table(df):
         product_page_url = clean_text(row.get("Product Page"))
         product_name = clean_text(row.get("Product"))
 
-        verified_image_url = strict_cyclon_product_image(
+        product_image_url = cyclon_primary_product_image(
             product_page_url,
             product_name,
         )
 
-        if verified_image_url:
-            image_src = cyclon_asset(verified_image_url) or verified_image_url
+        if product_image_url:
+            image_src = cyclon_asset(product_image_url) or product_image_url
             parts.append(
                 '<td><img src="'
                 + html.escape(image_src, quote=True)
