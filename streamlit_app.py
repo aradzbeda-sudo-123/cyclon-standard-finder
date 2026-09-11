@@ -95,9 +95,6 @@ if "last_standard" not in st.session_state:
 if "standard_input" not in st.session_state:
     st.session_state.standard_input = ""
 
-if "ferromat_display_filter" not in st.session_state:
-    st.session_state.ferromat_display_filter = "FERROMAT_ONLY"
-
 
 # ============================================================
 # OFFICIAL CYCLON IMAGE LOADER
@@ -312,7 +309,6 @@ st.caption(
 # ============================================================
 
 BASE_DIR = Path(__file__).resolve().parent
-FERROMAT_FILE = BASE_DIR / "oils.xlsx"
 
 
 def clean_text(value):
@@ -321,115 +317,6 @@ def clean_text(value):
     if isinstance(value, list):
         return ", ".join(str(x).strip() for x in value if str(x).strip())
     return str(value).strip()
-
-
-def _ref_key(value):
-    return re.sub(r"[^A-Z0-9]+", "", clean_text(value).upper())
-
-
-def _split_master_refs(value):
-    text = clean_text(value)
-    if not text:
-        return []
-    refs = []
-    for part in re.split(r"\s*/\s*|\s*\|\s*|\s*;\s*|\s*,\s*", text):
-        key = _ref_key(part)
-        if key and key not in refs:
-            refs.append(key)
-    return refs
-
-
-def _supplier_refs_from_result(value):
-    """
-    Extract CYCLON article numbers from SKU / Size.
-    Example:
-      3707 – 5 l | 8972 – 1 l | 3715 – 4 l
-    """
-    text = clean_text(value)
-    if not text:
-        return []
-
-    refs = []
-    for chunk in re.split(r"\s*\|\s*|\s*;\s*|\s*,\s*", text):
-        chunk = chunk.strip()
-        if not chunk:
-            continue
-
-        m = re.match(r"^\s*([A-Za-z0-9][A-Za-z0-9._/-]*)", chunk)
-        if not m:
-            continue
-
-        token = m.group(1)
-
-        for part in token.split("/"):
-            key = _ref_key(part)
-            if key and key not in refs:
-                refs.append(key)
-
-    return refs
-
-
-@st.cache_data(show_spinner=False)
-def load_ferromat_lookup():
-    """
-    Exact mapping only:
-      BRAND = CYCLON
-      + exact SUPPLIER_REF
-
-    No mapping is inferred from an oil standard or product name.
-    """
-    lookup = {}
-
-    if not FERROMAT_FILE.exists():
-        return lookup
-
-    try:
-        frame = pd.read_excel(FERROMAT_FILE, dtype=str).fillna("")
-    except Exception:
-        return lookup
-
-    required = {"SKU_FERROMAT", "BRAND", "SUPPLIER_REF"}
-    if not required.issubset(frame.columns):
-        return lookup
-
-    frame = frame[
-        frame["BRAND"].astype(str).str.strip().str.upper().eq("CYCLON")
-    ].copy()
-
-    for _, item in frame.iterrows():
-        ferromat_sku = clean_text(item.get("SKU_FERROMAT"))
-        if not ferromat_sku:
-            continue
-
-        for supplier_ref in _split_master_refs(item.get("SUPPLIER_REF")):
-            lookup.setdefault(supplier_ref, [])
-            if ferromat_sku not in lookup[supplier_ref]:
-                lookup[supplier_ref].append(ferromat_sku)
-
-    return lookup
-
-
-def ferromat_links_for_product(sku_size):
-    lookup = load_ferromat_lookup()
-    found = []
-    seen = set()
-
-    for supplier_ref in _supplier_refs_from_result(sku_size):
-        for ferromat_sku in lookup.get(supplier_ref, []):
-            if ferromat_sku in seen:
-                continue
-
-            seen.add(ferromat_sku)
-            found.append({
-                "sku": ferromat_sku,
-                # oils.xlsx does not contain FERROMAT URLs.
-                # This opens FERROMAT's own exact-SKU search and is navigation only.
-                "url": "https://www.ferromat.co.il/?s=" + quote_plus(ferromat_sku),
-                "supplier_ref": supplier_ref,
-            })
-
-    return found
-
 
 
 def _viscosity_key(value):
@@ -495,7 +382,6 @@ def build_results(standard):
             continue
 
         seen.add(key)
-        row["FERROMAT Links"] = ferromat_links_for_product(row["SKU / Size"])
         rows.append(row)
 
     rows.sort(
@@ -514,7 +400,6 @@ def render_results_table(df):
     Image, Manufacturer, Product, SKU / Size, Viscosity,
     Standards, TDS, Product Page.
 
-    Matching FERROMAT SKUs are appended inside SKU / Size.
     """
     columns = [
         "Image",
@@ -594,31 +479,6 @@ def render_results_table(df):
         )
 
         sku_html = html.escape(clean_text(row.get("SKU / Size")))
-        links = row.get("FERROMAT Links", []) or []
-        ferromat_display = []
-
-        for item in links:
-            sku = clean_text(item.get("sku"))
-            url = clean_text(item.get("url"))
-            if not sku:
-                continue
-
-            if url:
-                ferromat_display.append(
-                    '<a target="_blank" href="'
-                    + html.escape(url, quote=True)
-                    + '">'
-                    + html.escape(sku)
-                    + "</a>"
-                )
-            else:
-                ferromat_display.append(html.escape(sku))
-
-        if ferromat_display:
-            if sku_html:
-                sku_html += " "
-            sku_html += "(FERROMAT " + " | ".join(ferromat_display) + ")"
-
         parts.append("<td>" + sku_html + "</td>")
 
         for column in ["Viscosity", "Standards"]:
@@ -686,7 +546,6 @@ if submitted:
 
         st.session_state.search_results = results
         st.session_state.last_standard = standard
-        st.session_state.ferromat_display_filter = "FERROMAT_ONLY"
 
 
 # ============================================================
@@ -698,56 +557,11 @@ results = st.session_state.search_results
 if results:
     df = pd.DataFrame(results)
 
-    st.markdown("### Product Display")
-
-    ferromat_mask = df["FERROMAT Links"].apply(
-        lambda value: bool(value)
-        if isinstance(value, (list, tuple, set, dict))
-        else bool(clean_text(value))
-    )
-
-    ferromat_count = int(ferromat_mask.sum())
-
-    filter_col_all, filter_col_ferromat = st.columns(2)
-
-    with filter_col_all:
-        all_selected = st.session_state.ferromat_display_filter == "ALL"
-        if st.button(
-            f"All matching products\n\n{len(df)}",
-            key="ferromat_filter_all",
-            use_container_width=True,
-            type="primary" if all_selected else "secondary",
-        ):
-            st.session_state.ferromat_display_filter = "ALL"
-            st.rerun()
-
-    with filter_col_ferromat:
-        ferromat_selected = (
-            st.session_state.ferromat_display_filter == "FERROMAT_ONLY"
-        )
-        if st.button(
-            f"FERROMAT products only\n\n{ferromat_count}",
-            key="ferromat_filter_only",
-            use_container_width=True,
-            type="primary" if ferromat_selected else "secondary",
-        ):
-            st.session_state.ferromat_display_filter = "FERROMAT_ONLY"
-            st.rerun()
-
-    if st.session_state.ferromat_display_filter == "FERROMAT_ONLY":
-        df = df.loc[ferromat_mask].copy()
-
     st.markdown(
         f"### CYCLON Results ({len(df)})"
     )
 
-    if df.empty:
-        st.info(
-            "CYCLON products matching this specification were found, but none has an exact FERROMAT mapping. "
-            "Click 'All matching products' to view them all."
-        )
-    else:
-        render_results_table(df)
+    render_results_table(df)
 
 elif st.session_state.last_standard:
     st.info(
