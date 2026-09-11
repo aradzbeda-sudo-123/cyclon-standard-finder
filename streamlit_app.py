@@ -276,6 +276,167 @@ def cyclon_primary_product_image(product_page_url, product_name):
     return ""
 
 
+
+# ============================================================
+# CYCLON VISUAL DESIGN
+# ============================================================
+st.markdown("""
+<style>
+:root {
+    --cyclon-navy:#061f3d;
+    --cyclon-navy2:#0a3159;
+    --cyclon-yellow:#ffd400;
+    --cyclon-bg:#eef4f8;
+    --cyclon-text:#092443;
+}
+.stApp {
+    background:
+      radial-gradient(circle at 85% 0%, rgba(255,212,0,.12), transparent 24rem),
+      linear-gradient(180deg,#061f3d 0 250px,#eef4f8 250px 100%);
+    color:var(--cyclon-text);
+}
+[data-testid="stHeader"] { background:transparent; }
+.block-container {
+    max-width:1420px;
+    padding-top:1.25rem;
+    padding-bottom:3rem;
+}
+.cyclon-hero {
+    min-height:205px;
+    border-radius:0 0 28px 28px;
+    padding:34px 42px;
+    margin:-20px -18px 24px;
+    position:relative;
+    overflow:hidden;
+    background:
+      radial-gradient(ellipse at 72% 52%, rgba(255,212,0,.32), transparent 9%),
+      radial-gradient(ellipse at 70% 55%, rgba(23,95,151,.55), transparent 32%),
+      linear-gradient(115deg,#03172d 0%,#082d52 58%,#041a33 100%);
+    box-shadow:0 16px 40px rgba(3,24,46,.25);
+}
+.cyclon-hero:after {
+    content:"";
+    position:absolute;
+    width:560px;height:120px;
+    right:-80px;bottom:12px;
+    border-top:12px solid rgba(255,212,0,.9);
+    border-radius:50%;
+    transform:rotate(-10deg);
+    filter:drop-shadow(0 0 12px rgba(255,212,0,.25));
+}
+.cyclon-logo-text {
+    color:var(--cyclon-yellow);
+    font-size:58px;
+    font-weight:900;
+    letter-spacing:-4px;
+    line-height:.9;
+}
+.cyclon-tag {
+    color:white;
+    font-size:13px;
+    letter-spacing:2.2px;
+    margin-top:8px;
+}
+.cyclon-hero-title {
+    color:white;
+    font-size:30px;
+    font-weight:800;
+    margin-top:28px;
+    max-width:580px;
+}
+.cyclon-hero-title b { color:var(--cyclon-yellow); }
+.cyclon-card {
+    background:rgba(255,255,255,.98);
+    border:1px solid rgba(9,49,89,.08);
+    border-radius:24px;
+    padding:22px 26px 10px;
+    box-shadow:0 12px 35px rgba(8,42,73,.10);
+    margin-bottom:12px;
+}
+div[data-testid="stForm"] {
+    background:white;
+    border:1px solid rgba(9,49,89,.08);
+    border-radius:24px;
+    padding:20px 24px 10px;
+    box-shadow:0 12px 35px rgba(8,42,73,.11);
+}
+div[data-testid="stTextInput"] input {
+    border-radius:16px;
+    min-height:52px;
+    border:1px solid #d5e0ea;
+    font-size:17px;
+}
+div[data-testid="stFormSubmitButton"] button {
+    min-height:50px;
+    border-radius:15px;
+    background:var(--cyclon-yellow);
+    color:#061f3d;
+    border:0;
+    font-weight:800;
+    font-size:17px;
+}
+div[data-testid="stFormSubmitButton"] button:hover {
+    background:#ffe047;
+    color:#061f3d;
+    border:0;
+}
+h1,h2,h3 { color:#092443; }
+.oil-table-wrap {
+    border-radius:20px !important;
+    box-shadow:0 10px 28px rgba(8,42,73,.10);
+    background:white;
+}
+table.oil-table {
+    border-collapse:separate !important;
+    border-spacing:0 !important;
+}
+.oil-table th {
+    background:#e7eef4 !important;
+    color:#092443 !important;
+    border-color:#dbe4ec !important;
+}
+.oil-table td {
+    background:white;
+    border-color:#e7edf2 !important;
+}
+.oil-table tr:hover td { background:#f8fbfd; }
+.oil-table img {
+    max-width:92px !important;
+    max-height:105px !important;
+}
+.oil-table a {
+    color:#0b5eaa;
+    text-decoration:none !important;
+}
+.cyclon-footer {
+    margin:32px -18px -48px;
+    padding:24px 34px;
+    border-radius:22px 22px 0 0;
+    background:#061f3d;
+    color:#d9e5ef;
+    display:flex;
+    justify-content:space-between;
+    gap:20px;
+    flex-wrap:wrap;
+    font-size:12px;
+    letter-spacing:1.4px;
+}
+.cyclon-footer strong { color:#ffd400; font-size:25px; }
+@media(max-width:700px){
+  .block-container{padding-left:.7rem;padding-right:.7rem}
+  .cyclon-hero{padding:28px 24px;min-height:190px;margin-top:-12px}
+  .cyclon-logo-text{font-size:48px}
+  .cyclon-hero-title{font-size:24px}
+}
+</style>
+<div class="cyclon-hero">
+  <div class="cyclon-logo-text">cyclon</div>
+  <div class="cyclon-tag">LUBRICANTS FOR A MOVING WORLD</div>
+  <div class="cyclon-hero-title">DRIVE PERFORMANCE<br><b>EVERY DAY</b></div>
+</div>
+""", unsafe_allow_html=True)
+
+
 # ============================================================
 # HEADER
 # ============================================================
@@ -616,3 +777,11 @@ elif st.session_state.last_standard:
     st.info(
         f"No CYCLON products were found for {st.session_state.last_standard}."
     )
+
+st.markdown("""
+<div class="cyclon-footer">
+  <div><strong>cyclon</strong><br>LUBRICANTS FOR A MOVING WORLD</div>
+  <div>QUALITY &nbsp; | &nbsp; TECHNOLOGY &nbsp; | &nbsp; PERFORMANCE</div>
+  <div>A CLEANER · BRIGHTER TOMORROW</div>
+</div>
+""", unsafe_allow_html=True)
