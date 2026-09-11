@@ -146,12 +146,12 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-st.write("Search CYCLON automotive oils by vehicle manufacturer specification.")
+st.write("Search CYCLON automotive oils by vehicle manufacturer specification or viscosity.")
 
-st.caption("Examples: VW509, VW504, MB22951, BMWLL04, PorscheC30")
+st.caption("Examples: VW509, VW504, MB22951, BMWLL04, PorscheC30, 5W30, 0W20, 10W40")
 
 st.caption(
-    "Searches the local CYCLON catalog and automatically matches equivalent standard formats."
+    "Searches the local CYCLON catalog and automatically matches equivalent standard and viscosity formats."
 )
 
 
@@ -279,6 +279,33 @@ def ferromat_links_for_product(sku_size):
     return found
 
 
+
+def _viscosity_key(value):
+    """
+    Normalizes viscosity so these are equivalent:
+    5W30, 5W-30, 5 W 30, SAE 5W-30
+    """
+    text = clean_text(value).upper()
+    text = re.sub(r"\bSAE\b", "", text)
+    return re.sub(r"[^A-Z0-9]", "", text)
+
+
+def _is_viscosity_query(value):
+    return bool(re.fullmatch(r"\d{1,3}W\d{1,3}", _viscosity_key(value)))
+
+
+def search_cyclon_by_viscosity(products, viscosity):
+    query = _viscosity_key(viscosity)
+    if not query:
+        return []
+
+    matches = []
+    for product in products:
+        if _viscosity_key(product.get("viscosity")) == query:
+            matches.append(product)
+    return matches
+
+
 @st.cache_resource(show_spinner=False)
 def get_cyclon_products():
     return load_cyclon_products()
@@ -286,7 +313,11 @@ def get_cyclon_products():
 
 def build_results(standard):
     products = get_cyclon_products()
-    matches = search_cyclon(products, standard)
+
+    if _is_viscosity_query(standard):
+        matches = search_cyclon_by_viscosity(products, standard)
+    else:
+        matches = search_cyclon(products, standard)
 
     rows = []
     seen = set()
@@ -469,9 +500,9 @@ def render_results_table(df):
 
 with st.form("search_form", clear_on_submit=False):
     st.text_input(
-        "Enter oil specification",
+        "Enter oil specification or viscosity",
         key="standard_input",
-        placeholder="Example: VW504",
+        placeholder="Example: VW504 or 5W30",
     )
 
     submitted = st.form_submit_button(
@@ -489,7 +520,7 @@ if submitted:
     standard = st.session_state.standard_input.strip()
 
     if not standard:
-        st.warning("Please enter an oil specification.")
+        st.warning("Please enter an oil specification or viscosity.")
     else:
         with st.spinner("Searching the CYCLON catalog..."):
             results = build_results(standard)
@@ -561,5 +592,5 @@ if results:
 
 elif st.session_state.last_standard:
     st.info(
-        f"No CYCLON products were found for specification {st.session_state.last_standard}."
+        f"No CYCLON products were found for {st.session_state.last_standard}."
     )
