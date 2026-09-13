@@ -95,6 +95,12 @@ if "last_standard" not in st.session_state:
 if "standard_input" not in st.session_state:
     st.session_state.standard_input = ""
 
+if "viscosity_input" not in st.session_state:
+    st.session_state.viscosity_input = ""
+
+if "sku_input" not in st.session_state:
+    st.session_state.sku_input = ""
+
 
 # ============================================================
 # OFFICIAL CYCLON IMAGE LOADER
@@ -556,21 +562,19 @@ def get_cyclon_products():
     return load_cyclon_products()
 
 
-def build_results(standard):
+def build_results(standard="", viscosity="", sku=""):
     products = get_cyclon_products()
+    matches = list(products)
 
-    if _is_viscosity_query(standard):
-        matches = search_cyclon_by_viscosity(products, standard)
-    else:
-        sku_matches = search_cyclon_by_sku(products, standard)
-        if sku_matches:
-            matches = sku_matches
-        else:
-            matches = search_cyclon(products, standard)
+    if standard:
+        matches = search_cyclon(matches, standard)
+    if viscosity:
+        matches = search_cyclon_by_viscosity(matches, viscosity)
+    if sku:
+        matches = search_cyclon_by_sku(matches, sku)
 
     rows = []
     seen = set()
-
     for item in matches:
         row = {
             "Image": clean_text(item.get("image")),
@@ -582,25 +586,12 @@ def build_results(standard):
             "TDS": clean_text(item.get("tds")),
             "Product Page": clean_text(item.get("url")),
         }
-
-        key = (
-            row["Product"].upper(),
-            row["SKU / Size"].upper(),
-            row["Viscosity"].upper(),
-        )
+        key=(row["Product"].upper(),row["SKU / Size"].upper(),row["Viscosity"].upper())
         if key in seen:
             continue
-
         seen.add(key)
         rows.append(row)
-
-    rows.sort(
-        key=lambda x: (
-            x["Product"].upper(),
-            x["Viscosity"].upper(),
-            x["SKU / Size"].upper(),
-        )
-    )
+    rows.sort(key=lambda x:(x["Product"].upper(),x["Viscosity"].upper(),x["SKU / Size"].upper()))
     return rows
 
 
@@ -728,17 +719,16 @@ def render_results_table(df):
 # ============================================================
 
 with st.form("search_form", clear_on_submit=False):
-    st.text_input(
-        "Enter specification, viscosity, or SKU",
-        key="standard_input",
-        placeholder="Example: VW504, 5W30, OPP005 or JM26508",
-    )
-
-    submitted = st.form_submit_button(
-        "🔎 Search",
-        type="primary",
-        use_container_width=True,
-    )
+    st.markdown("#### Search by one field or combine several")
+    col1, col2, col3 = st.columns(3)
+    with col1:
+        st.text_input("Specification", key="standard_input", placeholder="Example: VW504")
+    with col2:
+        st.text_input("Viscosity", key="viscosity_input", placeholder="Example: 5W30")
+    with col3:
+        st.text_input("SKU / Article number", key="sku_input", placeholder="Example: OPP005")
+    st.caption("Fill one field, two fields, or all three. All filled fields must match the same product.")
+    submitted = st.form_submit_button("🔎 Search", type="primary", use_container_width=True)
 
 
 # ============================================================
@@ -747,15 +737,20 @@ with st.form("search_form", clear_on_submit=False):
 
 if submitted:
     standard = st.session_state.standard_input.strip()
+    viscosity = st.session_state.viscosity_input.strip()
+    sku = st.session_state.sku_input.strip()
 
-    if not standard:
-        st.warning("Please enter a specification, viscosity, or SKU.")
+    if not (standard or viscosity or sku):
+        st.warning("Please enter at least one search field.")
     else:
         with st.spinner("Searching the CYCLON catalog..."):
-            results = build_results(standard)
-
+            results = build_results(standard=standard, viscosity=viscosity, sku=sku)
         st.session_state.search_results = results
-        st.session_state.last_standard = standard
+        parts=[]
+        if standard: parts.append(f"Specification: {standard}")
+        if viscosity: parts.append(f"Viscosity: {viscosity}")
+        if sku: parts.append(f"SKU: {sku}")
+        st.session_state.last_standard = " | ".join(parts)
 
 
 # ============================================================
