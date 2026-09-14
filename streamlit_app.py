@@ -95,11 +95,7 @@ if "last_standard" not in st.session_state:
 if "standard_input" not in st.session_state:
     st.session_state.standard_input = ""
 
-if "viscosity_input" not in st.session_state:
-    st.session_state.viscosity_input = ""
 
-if "sku_input" not in st.session_state:
-    st.session_state.sku_input = ""
 
 
 # ============================================================
@@ -562,19 +558,73 @@ def get_cyclon_products():
     return load_cyclon_products()
 
 
-def build_results(standard="", viscosity="", sku=""):
+
+def _smart_query_parts(value):
+    """
+    One search box for specification / viscosity / SKU / combinations.
+    Example: 10w30sq -> viscosity 10W30 + remaining term SQ.
+    """
+    compact = re.sub(r"[^A-Z0-9]+", "", clean_text(value).upper())
+
+    m = re.search(r"\d{1,3}W\d{1,3}", compact)
+    viscosity = m.group(0) if m else ""
+
+    remainder = compact
+    if viscosity:
+        remainder = remainder.replace(viscosity, "", 1)
+
+    return viscosity, remainder
+
+
+def _cyclon_free_text_match(product, term):
+    term = re.sub(r"[^A-Z0-9]+", "", clean_text(term).upper())
+    if not term:
+        return True
+
+    fields = [
+        product.get("name"),
+        product.get("product"),
+        product.get("code"),
+        product.get("parent_code"),
+        product.get("legacy_code"),
+        product.get("sku_size"),
+        product.get("standards"),
+    ]
+
+    for sku_row in product.get("sku_rows") or []:
+        fields.extend([sku_row.get("sku"), sku_row.get("size")])
+
+    haystack = re.sub(
+        r"[^A-Z0-9]+",
+        "",
+        " ".join(clean_text(x).upper() for x in fields if x),
+    )
+    return term in haystack
+
+
+def build_results(query):
     products = get_cyclon_products()
+    viscosity, remainder = _smart_query_parts(query)
+
     matches = list(products)
 
-    if standard:
-        matches = search_cyclon(matches, standard)
     if viscosity:
         matches = search_cyclon_by_viscosity(matches, viscosity)
-    if sku:
-        matches = search_cyclon_by_sku(matches, sku)
+
+    if remainder:
+        matches = [item for item in matches if _cyclon_free_text_match(item, remainder)]
+
+    # No viscosity detected: keep the original standard search as fallback.
+    if not viscosity and remainder:
+        direct = [item for item in products if _cyclon_free_text_match(item, remainder)]
+        if direct:
+            matches = direct
+        else:
+            matches = search_cyclon(products, query)
 
     rows = []
     seen = set()
+
     for item in matches:
         row = {
             "Image": clean_text(item.get("image")),
@@ -586,12 +636,25 @@ def build_results(standard="", viscosity="", sku=""):
             "TDS": clean_text(item.get("tds")),
             "Product Page": clean_text(item.get("url")),
         }
-        key=(row["Product"].upper(),row["SKU / Size"].upper(),row["Viscosity"].upper())
+
+        key = (
+            row["Product"].upper(),
+            row["SKU / Size"].upper(),
+            row["Viscosity"].upper(),
+        )
         if key in seen:
             continue
+
         seen.add(key)
         rows.append(row)
-    rows.sort(key=lambda x:(x["Product"].upper(),x["Viscosity"].upper(),x["SKU / Size"].upper()))
+
+    rows.sort(
+        key=lambda x: (
+            x["Product"].upper(),
+            x["Viscosity"].upper(),
+            x["SKU / Size"].upper(),
+        )
+    )
     return rows
 
 
@@ -719,16 +782,19 @@ def render_results_table(df):
 # ============================================================
 
 with st.form("search_form", clear_on_submit=False):
-    st.markdown("#### Search by one field or combine several")
-    col1, col2, col3 = st.columns(3)
-    with col1:
-        st.text_input("Specification", key="standard_input", placeholder="Example: VW504")
-    with col2:
-        st.text_input("Viscosity", key="viscosity_input", placeholder="Example: 5W30")
-    with col3:
-        st.text_input("SKU / Article number", key="sku_input", placeholder="Example: OPP005")
-    st.caption("Fill one field, two fields, or all three. All filled fields must match the same product.")
-    submitted = st.form_submit_button("🔎 Search", type="primary", use_container_width=True)
+    st.text_input(
+        "Search specification, viscosity, SKU — or combine them",
+        key="standard_input",
+        placeholder="Examples: VW504, OPP005, 10W30, 10W30SQ",
+    )
+
+    st.caption("אפשר לכתוב הכול בחיפוש אחד. לדוגמה: 10W30SQ")
+
+    submitted = st.form_submit_button(
+        "🔎 Search",
+        type="primary",
+        use_container_width=True,
+    )
 
 
 # ============================================================
@@ -736,21 +802,16 @@ with st.form("search_form", clear_on_submit=False):
 # ============================================================
 
 if submitted:
-    standard = st.session_state.standard_input.strip()
-    viscosity = st.session_state.viscosity_input.strip()
-    sku = st.session_state.sku_input.strip()
+    query = st.session_state.standard_input.strip()
 
-    if not (standard or viscosity or sku):
-        st.warning("Please enter at least one search field.")
+    if not query:
+        st.warning("Please enter a search value.")
     else:
         with st.spinner("Searching the CYCLON catalog..."):
-            results = build_results(standard=standard, viscosity=viscosity, sku=sku)
+            results = build_results(query)
+
         st.session_state.search_results = results
-        parts=[]
-        if standard: parts.append(f"Specification: {standard}")
-        if viscosity: parts.append(f"Viscosity: {viscosity}")
-        if sku: parts.append(f"SKU: {sku}")
-        st.session_state.last_standard = " | ".join(parts)
+        st.session_state.last_standard = query
 
 
 # ============================================================
