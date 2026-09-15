@@ -67,15 +67,17 @@ div[data-testid="stTable"] {
 }
 
 div[data-testid="stFormSubmitButton"] button {
-    background:#d71920 !important;
-    border-color:#d71920 !important;
-    color:white !important;
-    font-weight:700 !important;
+    background:#062b66 !important;
+    border:2px solid #ffd400 !important;
+    color:#ffd400 !important;
+    font-weight:900 !important;
+    border-radius:15px !important;
+    box-shadow:0 6px 16px rgba(6,31,61,.18) !important;
 }
 div[data-testid="stFormSubmitButton"] button:hover {
-    background:#b51218 !important;
-    border-color:#b51218 !important;
-    color:white !important;
+    background:#ffd400 !important;
+    border-color:#062b66 !important;
+    color:#062b66 !important;
 }
 </style>
 """, unsafe_allow_html=True)
@@ -373,18 +375,18 @@ div[data-testid="stTextInput"] input {
 div[data-testid="stFormSubmitButton"] button {
     min-height:50px;
     border-radius:15px;
-    background:var(--cyclon-navy);
-    color:var(--cyclon-yellow);
-    border:2px solid var(--cyclon-yellow);
+    background:var(--cyclon-navy) !important;
+    color:var(--cyclon-yellow) !important;
+    border:2px solid var(--cyclon-yellow) !important;
     font-weight:900;
     font-size:17px;
     letter-spacing:.3px;
     box-shadow:0 6px 16px rgba(6,31,61,.18);
 }
 div[data-testid="stFormSubmitButton"] button:hover {
-    background:var(--cyclon-yellow);
-    color:var(--cyclon-navy);
-    border:2px solid var(--cyclon-navy);
+    background:var(--cyclon-yellow) !important;
+    color:var(--cyclon-navy) !important;
+    border:2px solid var(--cyclon-navy) !important;
 }
 h1,h2,h3 { color:#092443; }
 .oil-table-wrap {
