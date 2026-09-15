@@ -111,6 +111,26 @@ iframe[title="managed-hosted-app-badge"],
     overflow:hidden !important;
 }
 
+/* Hide Streamlit Community Cloud floating/status badges on desktop and mobile. */
+footer,
+[data-testid="stFooter"],
+[data-testid="stStatusWidget"],
+[data-testid="stConnectionStatus"],
+[data-testid="stBottomBlockContainer"],
+iframe[title*="Streamlit" i],
+iframe[title*="badge" i],
+iframe[src*="streamlit.io"],
+.viewerBadge,
+[class*="viewerBadge"],
+[class*="ViewerBadge"],
+[class*="statusWidget"],
+[class*="StatusWidget"] {
+    display:none !important;
+    visibility:hidden !important;
+    opacity:0 !important;
+    pointer-events:none !important;
+}
+
 /* Remove the blank top strip left behind by Streamlit's hidden header. */
 .stAppViewContainer > .main,
 [data-testid="stAppViewContainer"] > .main {
@@ -561,27 +581,37 @@ table.oil-table {
   .oil-table{min-width:860px !important}
   .cyclon-footer{margin:28px -.7rem -48px !important;padding:22px 18px !important;border-radius:18px 18px 0 0 !important}
 }
-/* Mobile/tablet safety: keep CYCLON hero pinned to the viewport during touch scrolling. */
+/* Mobile/tablet: fixed CYCLON hero without locking touch scrolling. */
 @media (hover:none) and (pointer:coarse) {
-  /* Keep the CYCLON header above the scrolling app on real touch devices. */
-  [data-testid="stAppViewContainer"],
-  [data-testid="stMain"],
-  [data-testid="stMainBlockContainer"],
-  .main, .block-container {
-    transform:none !important;
-    filter:none !important;
-    perspective:none !important;
+  html, body {
+    height:auto !important;
+    min-height:100% !important;
+    overflow-x:hidden !important;
+    overflow-y:auto !important;
+    -webkit-overflow-scrolling:touch !important;
+    touch-action:pan-y !important;
+  }
+  [data-testid="stAppViewContainer"] {
+    height:auto !important;
+    min-height:100vh !important;
+    overflow-x:hidden !important;
+    overflow-y:visible !important;
+    touch-action:pan-y !important;
+  }
+  [data-testid="stMain"], [data-testid="stMainBlockContainer"], .main, .block-container {
+    height:auto !important;
+    min-height:0 !important;
     overflow:visible !important;
+    touch-action:pan-y !important;
   }
   .cyclon-hero {
     position:fixed !important;
     top:0 !important; left:0 !important; right:0 !important; bottom:auto !important;
-    width:100vw !important;
-    z-index:2147483646 !important;
-    transform:none !important;
-    -webkit-transform:none !important;
-    isolation:isolate !important;
-    pointer-events:auto !important;
+    width:100% !important;
+    z-index:2147483000 !important;
+    transform:translateZ(0) !important;
+    -webkit-transform:translateZ(0) !important;
+    pointer-events:none !important;
   }
 }
 </style>
