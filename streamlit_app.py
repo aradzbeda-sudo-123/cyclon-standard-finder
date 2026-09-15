@@ -131,6 +131,56 @@ iframe[src*="streamlit.io"],
     pointer-events:none !important;
 }
 
+
+/* 2026 Streamlit Cloud chrome: aggressively hide hosted-app badges and Manage app.
+   These are platform controls, not CYCLON UI. */
+[data-testid="stManageAppButton"],
+[data-testid="stAppManageButton"],
+[data-testid="stHostedAppBadge"],
+[data-testid="stCommunityCloudBadge"],
+[data-testid="stAppCreatorAvatar"],
+[data-testid="stAppCreatorAvatarContainer"],
+[data-testid="stDeployButtonContainer"],
+[data-testid="stToolbarActionButton"],
+button[aria-label*="Manage app" i],
+a[aria-label*="Manage app" i],
+button[title*="Manage app" i],
+a[title*="Manage app" i],
+a[href*="share.streamlit.io"],
+a[href*="streamlit.io/cloud"],
+a[href*="streamlit.io/community-cloud"],
+iframe[title*="Community Cloud" i],
+iframe[title*="Manage app" i],
+iframe[src*="share.streamlit.io"],
+iframe[src*="streamlit.app/-/"],
+div:has(> iframe[title*="Streamlit" i]),
+div:has(> iframe[title*="badge" i]),
+div:has(> a[href*="share.streamlit.io"]),
+div:has(> button[aria-label*="Manage app" i]) {
+    display:none !important;
+    visibility:hidden !important;
+    opacity:0 !important;
+    pointer-events:none !important;
+    width:0 !important;
+    height:0 !important;
+    min-width:0 !important;
+    min-height:0 !important;
+    margin:0 !important;
+    padding:0 !important;
+    overflow:hidden !important;
+}
+
+/* Mobile Cloud badges are injected as fixed/floating controls near the bottom edge. */
+@media (max-width: 768px) {
+  [data-testid="stAppViewContainer"] > div[style*="position: fixed"][style*="bottom"],
+  .stApp > div[style*="position: fixed"][style*="bottom"],
+  body > div[style*="position: fixed"][style*="bottom"] {
+      display:none !important;
+      visibility:hidden !important;
+      pointer-events:none !important;
+  }
+}
+
 /* Remove the blank top strip left behind by Streamlit's hidden header. */
 .stAppViewContainer > .main,
 [data-testid="stAppViewContainer"] > .main {
