@@ -1,4 +1,5 @@
 import streamlit as st
+import streamlit.components.v1 as components
 import pandas as pd
 import re
 import html
@@ -110,6 +111,45 @@ iframe[title="managed-hosted-app-badge"],
 </style>
 """, unsafe_allow_html=True)
 
+# Custom Share button. Streamlit's own toolbar stays hidden.
+components.html(
+    r"""
+    <style>
+      html,body{margin:0;padding:0;background:transparent;overflow:hidden;font-family:Arial,sans-serif}
+      #shareBtn{
+        position:fixed;top:8px;right:12px;z-index:2147483647;
+        height:38px;padding:0 15px;border-radius:19px;
+        border:1px solid rgba(255,255,255,.35);
+        background:#062b66;color:#fff;font-weight:700;font-size:14px;
+        cursor:pointer;box-shadow:0 2px 8px rgba(0,0,0,.16);
+      }
+      #shareBtn:hover{background:#ffd400;color:#062b66;border-color:#ffd400}
+      #msg{display:none;position:fixed;top:50px;right:12px;background:#fff;color:#062b66;
+           border:1px solid #ddd;border-radius:8px;padding:7px 10px;font-size:12px;box-shadow:0 2px 8px rgba(0,0,0,.12)}
+    </style>
+    <button id="shareBtn" title="Share">↗ Share</button><div id="msg">Link copied</div>
+    <script>
+      const btn=document.getElementById('shareBtn');
+      const msg=document.getElementById('msg');
+      function appUrl(){
+        try { return window.parent.location.href; } catch(e) {}
+        return document.referrer || window.location.href;
+      }
+      btn.addEventListener('click', async () => {
+        const data={title:'CYCLON Lubricants Standard Finder', text:'CYCLON Lubricants Standard Finder', url:appUrl()};
+        try {
+          if (navigator.share) { await navigator.share(data); return; }
+          await navigator.clipboard.writeText(data.url);
+          msg.style.display='block'; setTimeout(()=>msg.style.display='none',1600);
+        } catch(e) {
+          try { await navigator.clipboard.writeText(data.url); msg.style.display='block'; setTimeout(()=>msg.style.display='none',1600); } catch(_) {}
+        }
+      });
+    </script>
+    """,
+    height=0,
+    width=0,
+)
 
 
 # ============================================================
