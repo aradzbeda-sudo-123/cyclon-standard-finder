@@ -48,22 +48,17 @@ div[data-testid="stTable"] {
 }
 
 @media (max-width: 700px) {
+    /* Mobile keeps the same visual structure as desktop, only scaled to the screen. */
     .oil-table-wrap {
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
+        overflow-x:auto;
+        -webkit-overflow-scrolling:touch;
     }
     table.oil-table {
-        min-width: 980px;
-        font-size: 12px;
+        min-width:920px;
+        font-size:14px;
     }
-    .oil-table th,
-    .oil-table td {
-        padding: 6px !important;
-    }
-    .oil-table img {
-        max-width: 65px !important;
-        max-height: 75px !important;
-    }
+    .oil-table th, .oil-table td { padding:9px !important; }
+    .oil-table img { max-width:92px !important; max-height:105px !important; object-fit:contain !important; }
 }
 
 div[data-testid="stFormSubmitButton"] button {
@@ -78,6 +73,18 @@ div[data-testid="stFormSubmitButton"] button:hover {
     background:#ffd400 !important;
     border-color:#062b66 !important;
     color:#062b66 !important;
+}
+/* Keep Streamlit Share + three-dot menu, hide developer/source/deploy controls. */
+[data-testid="stToolbarActions"] a[href*="github.com"],
+[data-testid="stToolbarActions"] button[aria-label*="GitHub" i],
+[data-testid="stToolbarActions"] button[title*="GitHub" i],
+[data-testid="stToolbarActions"] button[aria-label*="source" i],
+[data-testid="stToolbarActions"] button[title*="source" i],
+[data-testid="stToolbarActions"] button[aria-label*="deploy" i],
+[data-testid="stToolbarActions"] button[title*="deploy" i],
+[data-testid="stToolbarActions"] a[aria-label*="GitHub" i],
+[data-testid="stToolbarActions"] a[title*="GitHub" i] {
+    display:none !important;
 }
 </style>
 """, unsafe_allow_html=True)
@@ -431,10 +438,13 @@ table.oil-table {
 }
 .cyclon-footer strong { color:#ffd400; font-size:25px; }
 @media(max-width:700px){
-  .block-container{padding-left:.7rem;padding-right:.7rem}
-  .cyclon-hero{padding:28px 24px;min-height:190px;margin-top:-12px}
-  .cyclon-logo-text{font-size:48px}
-  .cyclon-hero-title{font-size:24px}
+  .block-container{padding-left:.7rem;padding-right:.7rem;max-width:1420px}
+  .cyclon-hero{padding:34px 28px;min-height:205px;margin:-12px -.25rem 24px;border-radius:0 0 28px 28px}
+  .cyclon-logo-text{font-size:58px}
+  .cyclon-hero-title{font-size:30px}
+  div[data-testid="stForm"]{padding:20px 18px 10px}
+  div[data-testid="stTextInput"] input{font-size:17px;min-height:52px}
+  div[data-testid="stFormSubmitButton"] button{font-size:17px;min-height:50px}
 }
 </style>
 <div class="cyclon-hero">
@@ -803,9 +813,10 @@ def render_results_table(df):
 
 with st.form("search_form", clear_on_submit=False):
     st.text_input(
-        "Search specification, viscosity, SKU — or combine them",
+        "Search",
         key="standard_input",
         placeholder="Examples: VW509, BMWLL04, 5W30, OPP005, JM26508",
+        label_visibility="collapsed",
     )
 
 
