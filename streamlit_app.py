@@ -308,7 +308,9 @@ st.markdown("""
     border-radius:0 0 28px 28px;
     padding:34px 42px;
     margin:-20px -18px 24px;
-    position:relative;
+    position:sticky;
+    top:0;
+    z-index:999;
     overflow:hidden;
     background:
       radial-gradient(ellipse at 72% 52%, rgba(255,212,0,.32), transparent 9%),
@@ -371,16 +373,18 @@ div[data-testid="stTextInput"] input {
 div[data-testid="stFormSubmitButton"] button {
     min-height:50px;
     border-radius:15px;
-    background:var(--cyclon-yellow);
-    color:#061f3d;
-    border:0;
-    font-weight:800;
+    background:var(--cyclon-navy);
+    color:var(--cyclon-yellow);
+    border:2px solid var(--cyclon-yellow);
+    font-weight:900;
     font-size:17px;
+    letter-spacing:.3px;
+    box-shadow:0 6px 16px rgba(6,31,61,.18);
 }
 div[data-testid="stFormSubmitButton"] button:hover {
-    background:#ffe047;
-    color:#061f3d;
-    border:0;
+    background:var(--cyclon-yellow);
+    color:var(--cyclon-navy);
+    border:2px solid var(--cyclon-navy);
 }
 h1,h2,h3 { color:#092443; }
 .oil-table-wrap {
@@ -460,11 +464,6 @@ st.markdown(
 
 st.write("Search CYCLON automotive oils by vehicle manufacturer specification, viscosity, or SKU.")
 
-st.caption("Examples: VW509, BMWLL04, 5W30, OPP005, JM26508")
-
-st.caption(
-    "Searches the local CYCLON catalog by specification, viscosity, or exact SKU/article number."
-)
 
 
 # ============================================================
@@ -693,10 +692,32 @@ def render_results_table(df):
             position:sticky;
             top:0;
         }
-        .oil-table img {
+        .oil-table .product-image-link {
+            display:inline-block;
+            position:relative;
+            cursor:pointer;
+        }
+        .oil-table .product-image-link img {
             max-width:80px;
             max-height:90px;
             object-fit:contain;
+            transition:transform .18s ease, box-shadow .18s ease;
+            transform-origin:center center;
+            position:relative;
+            z-index:1;
+        }
+        @media (hover:hover) and (pointer:fine) {
+            .oil-table .product-image-link:hover img {
+                transform:scale(2.35);
+                z-index:1000;
+                background:#fff;
+                box-shadow:0 10px 30px rgba(6,31,61,.28);
+                border-radius:8px;
+            }
+            .oil-table td:has(.product-image-link:hover) {
+                position:relative;
+                z-index:1001;
+            }
         }
         .oil-table a {
             text-decoration:underline;
@@ -727,11 +748,19 @@ def render_results_table(df):
 
         if product_image_url:
             image_src = cyclon_asset(product_image_url) or product_image_url
-            parts.append(
-                '<td><img src="'
-                + html.escape(image_src, quote=True)
-                + '" loading="lazy"></td>'
+            image_html = (
+                '<img src="' + html.escape(image_src, quote=True) + '" '
+                'loading="lazy" alt="' + html.escape(product_name, quote=True) + '">'
             )
+            if product_page_url:
+                image_html = (
+                    '<a class="product-image-link" target="_blank" rel="noopener noreferrer" href="'
+                    + html.escape(product_page_url, quote=True)
+                    + '" title="Open CYCLON product page">'
+                    + image_html
+                    + '</a>'
+                )
+            parts.append('<td>' + image_html + '</td>')
         else:
             parts.append("<td></td>")
 
@@ -785,10 +814,9 @@ with st.form("search_form", clear_on_submit=False):
     st.text_input(
         "Search specification, viscosity, SKU — or combine them",
         key="standard_input",
-        placeholder="Examples: VW504, OPP005, 10W30, 10W30SQ",
+        placeholder="Examples: VW509, BMWLL04, 5W30, OPP005, JM26508",
     )
 
-    st.caption("אפשר לכתוב הכול בחיפוש אחד. לדוגמה: 10W30SQ")
 
     submitted = st.form_submit_button(
         "🔎 Search",
