@@ -16,7 +16,7 @@ from cyclon_engine import load_cyclon_products, search_cyclon
 # ============================================================
 
 st.set_page_config(
-    page_title="CYCLON Oil Standard Finder",
+    page_title="CYCLON Lubricants Standard Finder",
     page_icon="🔎",
     layout="wide",
 )
@@ -449,22 +449,10 @@ table.oil-table {
 # HEADER
 # ============================================================
 
-import base64
-
-_logo_file = Path(__file__).with_name("cyclon_logo.png")
-_logo_b64 = base64.b64encode(_logo_file.read_bytes()).decode("ascii")
 st.markdown(
-    '<img src="data:image/png;base64,' + _logo_b64 + '" alt="CYCLON" '
-    'style="width:230px; height:auto; margin-bottom:14px;">',
+    '<h1 style="font-size: 30px; margin-bottom: 0.5rem;">🔎 CYCLON Lubricants Standard Finder</h1>',
     unsafe_allow_html=True,
 )
-
-st.markdown(
-    '<h1 style="font-size: 30px; margin-bottom: 0.5rem;">🔎 CYCLON Oil Standard Finder</h1>',
-    unsafe_allow_html=True,
-)
-
-st.write("Search CYCLON automotive oils by vehicle manufacturer specification, viscosity, or SKU.")
 
 
 
@@ -680,13 +668,14 @@ def render_results_table(df):
     parts = [
         """
         <style>
-        .oil-table-wrap { overflow-x:auto; width:100%; }
+        .oil-table-wrap { overflow:visible; width:100%; }
         table.oil-table { width:100%; border-collapse:collapse; font-size:14px; }
         .oil-table th,.oil-table td {
             border:1px solid #e6e6e6;
             padding:9px;
             vertical-align:middle;
             text-align:left;
+            overflow:visible;
         }
         .oil-table th {
             font-weight:700;
@@ -710,7 +699,7 @@ def render_results_table(df):
         }
         @media (hover:hover) and (pointer:fine) {
             .oil-table .product-image-link:hover img {
-                transform:scale(2.35);
+                transform:scale(2.15);
                 z-index:1000;
                 background:#fff;
                 box-shadow:0 10px 30px rgba(6,31,61,.28);
