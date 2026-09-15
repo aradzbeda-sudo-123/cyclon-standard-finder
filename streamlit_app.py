@@ -62,7 +62,7 @@ div[data-testid="stTable"] {
     .oil-table img { max-width:92px !important; max-height:105px !important; object-fit:contain !important; }
 }
 
-div[data-testid="stFormSubmitButton"] button {
+div[data-testid="stFormSubmitButton"] button, div[data-testid="stButton"] button {
     background:#062b66 !important;
     border:2px solid #ffd400 !important;
     color:#ffd400 !important;
@@ -70,7 +70,7 @@ div[data-testid="stFormSubmitButton"] button {
     border-radius:15px !important;
     box-shadow:0 6px 16px rgba(6,31,61,.18) !important;
 }
-div[data-testid="stFormSubmitButton"] button:hover {
+div[data-testid="stFormSubmitButton"] button:hover, div[data-testid="stButton"] button:hover {
     background:#ffd400 !important;
     border-color:#062b66 !important;
     color:#062b66 !important;
@@ -440,7 +440,7 @@ div[data-testid="stTextInput"] input {
     border:1px solid #d5e0ea;
     font-size:17px;
 }
-div[data-testid="stFormSubmitButton"] button {
+div[data-testid="stFormSubmitButton"] button, div[data-testid="stButton"] button {
     min-height:50px;
     border-radius:15px;
     background:var(--cyclon-navy) !important;
@@ -451,7 +451,7 @@ div[data-testid="stFormSubmitButton"] button {
     letter-spacing:.3px;
     box-shadow:0 6px 16px rgba(6,31,61,.18);
 }
-div[data-testid="stFormSubmitButton"] button:hover {
+div[data-testid="stFormSubmitButton"] button:hover, div[data-testid="stButton"] button:hover {
     background:var(--cyclon-yellow) !important;
     color:var(--cyclon-navy) !important;
     border:2px solid var(--cyclon-navy) !important;
@@ -499,13 +499,28 @@ table.oil-table {
 }
 .cyclon-footer strong { color:#ffd400; font-size:25px; }
 @media(max-width:700px){
-  .block-container{padding-left:.7rem;padding-right:.7rem;max-width:1420px}
-  .cyclon-hero{padding:34px 28px;min-height:205px;margin:-12px -.25rem 24px;border-radius:0 0 28px 28px}
-  .cyclon-logo-text{font-size:58px}
-  .cyclon-hero-title{font-size:30px}
-  div[data-testid="stForm"]{padding:20px 18px 10px}
-  div[data-testid="stTextInput"] input{font-size:17px;min-height:52px}
-  div[data-testid="stFormSubmitButton"] button{font-size:17px;min-height:50px}
+  .block-container{padding:.35rem .7rem 3rem !important;max-width:100% !important}
+  .cyclon-hero{
+    position:sticky !important;
+    top:0 !important;
+    z-index:100000 !important;
+    box-sizing:border-box !important;
+    width:calc(100% + 1.4rem) !important;
+    margin:-.35rem -.7rem 18px !important;
+    padding:20px 18px 18px !important;
+    min-height:154px !important;
+    border-radius:0 0 20px 20px !important;
+    overflow:hidden !important;
+  }
+  .cyclon-hero:after{display:none !important}
+  .cyclon-logo-text{font-size:46px !important;line-height:.95 !important;letter-spacing:-3px !important}
+  .cyclon-tag{font-size:10px !important;letter-spacing:1.35px !important;margin-top:6px !important;white-space:normal !important}
+  .cyclon-hero-title{font-size:22px !important;line-height:1.08 !important;margin-top:16px !important;max-width:100% !important}
+  div[data-testid="stTextInput"] input{font-size:16px !important;min-height:50px !important}
+  div[data-testid="stButton"] button{font-size:16px !important;min-height:50px !important}
+  .oil-table-wrap{max-width:100% !important;overflow-x:auto !important;-webkit-overflow-scrolling:touch !important}
+  .oil-table{min-width:860px !important}
+  .cyclon-footer{margin:28px -.7rem -48px !important;padding:22px 18px !important;border-radius:18px 18px 0 0 !important}
 }
 </style>
 <div class="cyclon-hero">
@@ -872,20 +887,18 @@ def render_results_table(df):
 # SEARCH FORM
 # ============================================================
 
-with st.form("search_form", clear_on_submit=False):
-    st.text_input(
-        "Search",
-        key="standard_input",
-        placeholder="Examples: VW509, BMWLL04, 5W30, OPP005, JM26508",
-        label_visibility="collapsed",
-    )
+st.text_input(
+    "Search",
+    key="standard_input",
+    placeholder="Examples: VW509, BMWLL04, 5W30, OPP005, JM26508",
+    label_visibility="collapsed",
+)
 
-
-    submitted = st.form_submit_button(
-        "🔎 Search",
-        type="primary",
-        use_container_width=True,
-    )
+submitted = st.button(
+    "🔎 Search",
+    type="primary",
+    use_container_width=True,
+)
 
 
 # ============================================================
@@ -930,6 +943,6 @@ st.markdown("""
   <div><strong>cyclon</strong><br>LUBRICANTS FOR A MOVING WORLD</div>
   <div>QUALITY &nbsp; | &nbsp; TECHNOLOGY &nbsp; | &nbsp; PERFORMANCE</div>
   <div>A CLEANER · BRIGHTER TOMORROW</div>
-  <div style="margin-top:18px;font-size:12px;opacity:0.72;letter-spacing:0.2px;">All Rights Reserved © Arad Zbeda</div>
+  <div style="margin-top:18px;font-size:12px;opacity:0.72;letter-spacing:0.2px;">All Rights Reserved to CYCLON by Arad Zbeda</div>
 </div>
 """, unsafe_allow_html=True)
