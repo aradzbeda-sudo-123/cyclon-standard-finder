@@ -74,17 +74,35 @@ div[data-testid="stFormSubmitButton"] button:hover {
     border-color:#062b66 !important;
     color:#062b66 !important;
 }
-/* Keep Streamlit Share + three-dot menu, hide developer/source/deploy controls. */
-[data-testid="stToolbarActions"] a[href*="github.com"],
+/* Streamlit Cloud chrome: keep Share and the three-dot menu, remove developer/hosting links. */
+[data-testid="stStatusWidget"],
+[data-testid="stConnectionStatus"],
+[data-testid="stDeployButton"],
+.stDeployButton,
+.stAppDeployButton,
+[data-testid="manage_app_button"],
+iframe[title="managed-hosted-app-badge"],
+.viewerBadge,
+[class*="viewerBadge"],
+[data-testid="stToolbarActions"] a[href*="github.com" i],
+[data-testid="stToolbarActions"] a[href*="streamlit.io" i],
+[data-testid="stToolbarActions"] a[href*="streamlit.app" i],
 [data-testid="stToolbarActions"] button[aria-label*="GitHub" i],
 [data-testid="stToolbarActions"] button[title*="GitHub" i],
 [data-testid="stToolbarActions"] button[aria-label*="source" i],
 [data-testid="stToolbarActions"] button[title*="source" i],
 [data-testid="stToolbarActions"] button[aria-label*="deploy" i],
 [data-testid="stToolbarActions"] button[title*="deploy" i],
+[data-testid="stToolbarActions"] button[aria-label*="manage app" i],
+[data-testid="stToolbarActions"] button[title*="manage app" i],
 [data-testid="stToolbarActions"] a[aria-label*="GitHub" i],
 [data-testid="stToolbarActions"] a[title*="GitHub" i] {
     display:none !important;
+    visibility:hidden !important;
+    width:0 !important;
+    min-width:0 !important;
+    padding:0 !important;
+    margin:0 !important;
 }
 </style>
 """, unsafe_allow_html=True)
