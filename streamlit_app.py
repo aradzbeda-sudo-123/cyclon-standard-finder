@@ -930,5 +930,6 @@ st.markdown("""
   <div><strong>cyclon</strong><br>LUBRICANTS FOR A MOVING WORLD</div>
   <div>QUALITY &nbsp; | &nbsp; TECHNOLOGY &nbsp; | &nbsp; PERFORMANCE</div>
   <div>A CLEANER · BRIGHTER TOMORROW</div>
+  <div style="margin-top:18px;font-size:12px;opacity:0.72;letter-spacing:0.2px;">All Rights Reserved © Arad Zbeda</div>
 </div>
 """, unsafe_allow_html=True)
