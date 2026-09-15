@@ -74,35 +74,38 @@ div[data-testid="stFormSubmitButton"] button:hover {
     border-color:#062b66 !important;
     color:#062b66 !important;
 }
-/* Streamlit Cloud chrome: keep Share and the three-dot menu, remove developer/hosting links. */
+/* Hide the entire Streamlit Cloud toolbar/header chrome. */
+[data-testid="stHeader"],
+[data-testid="stToolbar"],
+[data-testid="stToolbarActions"],
+[data-testid="stDecoration"],
 [data-testid="stStatusWidget"],
 [data-testid="stConnectionStatus"],
 [data-testid="stDeployButton"],
+#MainMenu,
+header[data-testid="stHeader"],
 .stDeployButton,
 .stAppDeployButton,
 [data-testid="manage_app_button"],
 iframe[title="managed-hosted-app-badge"],
 .viewerBadge,
-[class*="viewerBadge"],
-[data-testid="stToolbarActions"] a[href*="github.com" i],
-[data-testid="stToolbarActions"] a[href*="streamlit.io" i],
-[data-testid="stToolbarActions"] a[href*="streamlit.app" i],
-[data-testid="stToolbarActions"] button[aria-label*="GitHub" i],
-[data-testid="stToolbarActions"] button[title*="GitHub" i],
-[data-testid="stToolbarActions"] button[aria-label*="source" i],
-[data-testid="stToolbarActions"] button[title*="source" i],
-[data-testid="stToolbarActions"] button[aria-label*="deploy" i],
-[data-testid="stToolbarActions"] button[title*="deploy" i],
-[data-testid="stToolbarActions"] button[aria-label*="manage app" i],
-[data-testid="stToolbarActions"] button[title*="manage app" i],
-[data-testid="stToolbarActions"] a[aria-label*="GitHub" i],
-[data-testid="stToolbarActions"] a[title*="GitHub" i] {
+[class*="viewerBadge"] {
     display:none !important;
     visibility:hidden !important;
+    height:0 !important;
+    min-height:0 !important;
     width:0 !important;
     min-width:0 !important;
     padding:0 !important;
     margin:0 !important;
+    border:0 !important;
+}
+
+/* Remove the blank top strip left behind by Streamlit's hidden header. */
+.stAppViewContainer > .main,
+[data-testid="stAppViewContainer"] > .main {
+    padding-top:0 !important;
+    margin-top:0 !important;
 }
 </style>
 """, unsafe_allow_html=True)
