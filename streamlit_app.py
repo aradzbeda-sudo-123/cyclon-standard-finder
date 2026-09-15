@@ -119,11 +119,11 @@ components.html(
       #shareBtn{
         position:fixed;top:8px;right:12px;z-index:2147483647;
         height:38px;padding:0 15px;border-radius:19px;
-        border:1px solid rgba(255,255,255,.35);
-        background:#062b66;color:#fff;font-weight:700;font-size:14px;
+        border:1px solid #ffd400;
+        background:#ffd400;color:#062b66;font-weight:700;font-size:14px;
         cursor:pointer;box-shadow:0 2px 8px rgba(0,0,0,.16);
       }
-      #shareBtn:hover{background:#ffd400;color:#062b66;border-color:#ffd400}
+      #shareBtn:hover{background:#ffe04d;color:#062b66;border-color:#ffe04d}
       #msg{display:none;position:fixed;top:50px;right:12px;background:#fff;color:#062b66;
            border:1px solid #ddd;border-radius:8px;padding:7px 10px;font-size:12px;box-shadow:0 2px 8px rgba(0,0,0,.12)}
     </style>
