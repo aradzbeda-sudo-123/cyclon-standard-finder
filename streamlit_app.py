@@ -102,6 +102,15 @@ iframe[title="managed-hosted-app-badge"],
     border:0 !important;
 }
 
+/* Never show Streamlit's "Press Enter to apply/submit" helper for the search field. */
+[data-testid="InputInstructions"],
+[data-testid="stTextInput"] small {
+    display:none !important;
+    visibility:hidden !important;
+    max-height:0 !important;
+    overflow:hidden !important;
+}
+
 /* Remove the blank top strip left behind by Streamlit's hidden header. */
 .stAppViewContainer > .main,
 [data-testid="stAppViewContainer"] > .main {
@@ -370,7 +379,7 @@ st.markdown("""
 [data-testid="stHeader"] { background:transparent; }
 .block-container {
     max-width:1420px;
-    padding-top:1.25rem;
+    padding-top:235px !important;
     padding-bottom:3rem;
 }
 .cyclon-hero {
@@ -378,9 +387,11 @@ st.markdown("""
     border-radius:0 0 28px 28px;
     padding:34px 42px;
     margin:-20px -18px 24px;
-    position:sticky;
+    position:fixed;
     top:0;
-    z-index:999;
+    left:max(0px, calc((100vw - 1420px) / 2));
+    right:max(0px, calc((100vw - 1420px) / 2));
+    z-index:999999;
     overflow:hidden;
     background:
       radial-gradient(ellipse at 72% 52%, rgba(255,212,0,.32), transparent 9%),
@@ -435,10 +446,29 @@ div[data-testid="stForm"] {
     box-shadow:0 12px 35px rgba(8,42,73,.11);
 }
 div[data-testid="stTextInput"] input {
-    border-radius:16px;
-    min-height:52px;
-    border:1px solid #d5e0ea;
-    font-size:17px;
+    border-radius:16px !important;
+    min-height:54px !important;
+    border:2px solid var(--cyclon-yellow) !important;
+    background:#ffffff !important;
+    color:var(--cyclon-navy) !important;
+    font-size:17px !important;
+    font-weight:700 !important;
+    box-shadow:inset 0 0 0 1px rgba(6,31,61,.10), 0 5px 14px rgba(6,31,61,.08) !important;
+}
+div[data-testid="stTextInput"] input:focus {
+    border-color:var(--cyclon-yellow) !important;
+    box-shadow:0 0 0 3px rgba(255,212,0,.28), 0 6px 18px rgba(6,31,61,.12) !important;
+    outline:none !important;
+}
+div[data-testid="stTextInput"] [data-testid="InputInstructions"],
+[data-testid="InputInstructions"],
+div[data-testid="stTextInput"] small {
+    display:none !important;
+    visibility:hidden !important;
+    height:0 !important;
+    min-height:0 !important;
+    margin:0 !important;
+    padding:0 !important;
 }
 div[data-testid="stFormSubmitButton"] button, div[data-testid="stButton"] button {
     min-height:50px;
@@ -498,15 +528,24 @@ table.oil-table {
     letter-spacing:1.4px;
 }
 .cyclon-footer strong { color:#ffd400; font-size:25px; }
-@media(max-width:700px){
-  .block-container{padding:.35rem .7rem 3rem !important;max-width:100% !important}
+@media(max-width:1024px){
+  html, body, [data-testid="stAppViewContainer"], .stApp { overflow-x:hidden !important; }
+  .block-container{padding:178px .7rem 3rem !important;max-width:100% !important}
   .cyclon-hero{
-    position:sticky !important;
+    position:fixed !important;
     top:0 !important;
-    z-index:100000 !important;
+    left:0 !important;
+    right:0 !important;
+    bottom:auto !important;
+    z-index:2147483000 !important;
+    transform:translate3d(0,0,0) !important;
+    -webkit-transform:translate3d(0,0,0) !important;
+    backface-visibility:hidden !important;
+    -webkit-backface-visibility:hidden !important;
+    will-change:transform !important;
     box-sizing:border-box !important;
-    width:calc(100% + 1.4rem) !important;
-    margin:-.35rem -.7rem 18px !important;
+    width:100% !important;
+    margin:0 !important;
     padding:20px 18px 18px !important;
     min-height:154px !important;
     border-radius:0 0 20px 20px !important;
@@ -516,11 +555,21 @@ table.oil-table {
   .cyclon-logo-text{font-size:46px !important;line-height:.95 !important;letter-spacing:-3px !important}
   .cyclon-tag{font-size:10px !important;letter-spacing:1.35px !important;margin-top:6px !important;white-space:normal !important}
   .cyclon-hero-title{font-size:22px !important;line-height:1.08 !important;margin-top:16px !important;max-width:100% !important}
-  div[data-testid="stTextInput"] input{font-size:16px !important;min-height:50px !important}
+  div[data-testid="stTextInput"] input{font-size:16px !important;min-height:52px !important;border:2px solid var(--cyclon-yellow) !important}
   div[data-testid="stButton"] button{font-size:16px !important;min-height:50px !important}
   .oil-table-wrap{max-width:100% !important;overflow-x:auto !important;-webkit-overflow-scrolling:touch !important}
   .oil-table{min-width:860px !important}
   .cyclon-footer{margin:28px -.7rem -48px !important;padding:22px 18px !important;border-radius:18px 18px 0 0 !important}
+}
+/* Mobile/tablet safety: keep CYCLON hero pinned to the viewport during touch scrolling. */
+@media (hover:none) and (pointer:coarse) {
+  .cyclon-hero {
+    position:fixed !important;
+    top:0 !important; left:0 !important; right:0 !important; bottom:auto !important;
+    z-index:2147483000 !important;
+    transform:translate3d(0,0,0) !important;
+    -webkit-transform:translate3d(0,0,0) !important;
+  }
 }
 </style>
 <div class="cyclon-hero">
