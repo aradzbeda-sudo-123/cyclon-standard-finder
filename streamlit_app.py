@@ -563,12 +563,25 @@ table.oil-table {
 }
 /* Mobile/tablet safety: keep CYCLON hero pinned to the viewport during touch scrolling. */
 @media (hover:none) and (pointer:coarse) {
+  /* Keep the CYCLON header above the scrolling app on real touch devices. */
+  [data-testid="stAppViewContainer"],
+  [data-testid="stMain"],
+  [data-testid="stMainBlockContainer"],
+  .main, .block-container {
+    transform:none !important;
+    filter:none !important;
+    perspective:none !important;
+    overflow:visible !important;
+  }
   .cyclon-hero {
     position:fixed !important;
     top:0 !important; left:0 !important; right:0 !important; bottom:auto !important;
-    z-index:2147483000 !important;
-    transform:translate3d(0,0,0) !important;
-    -webkit-transform:translate3d(0,0,0) !important;
+    width:100vw !important;
+    z-index:2147483646 !important;
+    transform:none !important;
+    -webkit-transform:none !important;
+    isolation:isolate !important;
+    pointer-events:auto !important;
   }
 }
 </style>
@@ -936,18 +949,18 @@ def render_results_table(df):
 # SEARCH FORM
 # ============================================================
 
-st.text_input(
-    "Search",
-    key="standard_input",
-    placeholder="Examples: VW509, BMWLL04, 5W30, OPP005, JM26508",
-    label_visibility="collapsed",
-)
-
-submitted = st.button(
-    "🔎 Search",
-    type="primary",
-    use_container_width=True,
-)
+with st.form("cyclon_search_form", clear_on_submit=False, border=False):
+    st.text_input(
+        "Search",
+        key="standard_input",
+        placeholder="Examples: VW509, BMWLL04, 5W30, OPP005, JM26508",
+        label_visibility="collapsed",
+    )
+    submitted = st.form_submit_button(
+        "🔎 Search",
+        type="primary",
+        use_container_width=True,
+    )
 
 
 # ============================================================
